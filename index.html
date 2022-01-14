@@ -10,10 +10,11 @@
     <link rel="icon" type="image/png" sizes="553x553" href="assets/img/favicon_circle.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Almarai&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Times%20New%20Roman%20Cyr.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
@@ -25,7 +26,7 @@
         <div class="container"><a class="navbar-brand logo" href="https://deep-real.github.io/"><img src="assets/img/logo.png" style="width: 120px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">research</a></li>
                     <li class="nav-item"><a class="nav-link" href="people.html">PEOPLE</a></li>
                     <li class="nav-item"><a class="nav-link" href="publication.html">PUBLICATION</a></li>
                     <li class="nav-item"><a class="nav-link" href="resouce.html">RESOURCE</a></li>
@@ -35,47 +36,94 @@
         </div>
     </nav>
     <main class="page landing-page">
-        <section class="clean-block clean-hero" style="color: rgba(33,37,41,0.27);background: url(&quot;assets/img/background.jpeg&quot;) no-repeat;background-size: cover;">
-            <div class="text">
-                <h2 style="text-align: left;font-family: Aldrich, sans-serif;font-size: 30.128px;">Deep Robust &amp; Explainable AI Lab</h2>
-                <p style="text-align: left;font-size: 15px;font-family: Montserrat, sans-serif;">Deep-REAL is a research lab affiliated with the <span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.cis.udel.edu%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFDF793zIWypQnNcdu4XLAwJ_7mAg" style="color: var(--bs-white);">Department of Computer and Information Sciences</a></span>&nbsp;and&nbsp;<span><a href="https://www.google.com/url?q=https%3A%2F%2Fdsi.udel.edu%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGPCedZeLQDp83yJE0hQYtbeaBPzw" style="color: var(--bs-white);">Data Science Institute</a></span>, at the University of Delaware. We work in the area of Deep Learning, Machine Learning, and Computer Vision. Our mission is to develop flexible, reliable, and explainable machine learning models, upon which cross-disciplinary research (biomechanics, geoscience, bioinformatics) can advance synergistically. Specially, we consider three fundamental data and learning challenges:</p>
-                <p style="text-align: left;font-size: 15px;"><span style="font-weight: bold;">Efficiency</span>:<br>How to learn comprehensive ML models (e.g. DNNs) given extreme data limitations (e.g. few-shot without labels)?</p>
-                <p style="text-align: left;font-size: 15px;"><span style="font-weight: bold;">Robustness</span>:<br>How to make trustworthy decisions on evolving domains (e.g. out-of-domain distributions)?</p>
-                <p style="text-align: left;font-size: 15px;"><span style="font-weight: bold;">Explainability</span>:<br>How to quantify the risk of uncertainty as well as potential cause-effects in the above scenarios?</p><a href="opening.html"><button class="btn btn-outline-light btn-lg" type="button">Prospective Student</button></a>
+        <section class="clean-block clean-hero" style="color: rgba(33,37,41,0.27);background: url(&quot;assets/img/background.jpeg&quot;) no-repeat;background-size: cover;min-height: 660px;">
+            <div class="text" style="max-width: 1000px;">
+                <h2 style="text-align: center;font-family: Aldrich, sans-serif;font-size: 35px;margin-top: 15px;">Welcome to Deep Robust &amp; Explainable AI Lab!</h2>
+                <p style="text-align: left;font-size: 18px;font-family: Montserrat, sans-serif;background: rgba(33,37,41,0.25);">Deep-REAL is a research lab affiliated with the <span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.cis.udel.edu%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFDF793zIWypQnNcdu4XLAwJ_7mAg" style="color: var(--bs-white);">Department of Computer and Information Sciences</a></span>&nbsp;and&nbsp;<span><a href="https://www.google.com/url?q=https%3A%2F%2Fdsi.udel.edu%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGPCedZeLQDp83yJE0hQYtbeaBPzw" style="color: var(--bs-white);">Data Science Institute</a></span>, at the University of Delaware. We work in the area of Deep Learning, Machine Learning, and Computer Vision. Our mission is to develop flexible, reliable, and explainable machine learning models, upon which cross-disciplinary research (biomechanics, geoscience, bioinformatics) can advance synergistically. Specially, we consider three fundamental data and learning challenges:</p>
+                <div class="row" style="margin-bottom: 25px;background: rgba(33,37,41,0.25);">
+                    <div class="col-md-4">
+                        <p style="text-align: left;font-size: 16px;"><span style="font-weight: bold;">Efficiency</span>:<br>How to learn comprehensive ML models (e.g. DNNs) given extreme data limitations (e.g. few-shot without labels)?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: left;font-size: 16px;"><span style="font-weight: bold;">Robustness</span>:<br>How to make trustworthy decisions on evolving domains (e.g. out-of-domain distributions)?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p style="text-align: left;font-size: 16px;"><span style="font-weight: bold;">Explainability</span>:<br>How to quantify the risk of uncertainty as well as potential cause-effects in the above scenarios?</p>
+                    </div>
+                </div><a href="opening.html"><button class="btn btn-outline-light btn-lg" type="button">Prospective Student</button></a>
+            </div>
+        </section>
+        <section class="clean-block clean-gallery dark" style="background: var(--bs-gray-100);">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="display-6 text-info">News</h2>
+                </div>
+                <div class="block-content" style="min-height: 499px;max-height: 500px;"><iframe id="frame_content" src="news.html" width="100%" height="400px"></iframe></div>
             </div>
         </section>
         <section class="clean-block clean-gallery dark" style="background: var(--bs-white);">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Demos: Robust &amp; Explainable Deep Learning</h2>
+                    <h2 class="text-info">Research Direction 1: Robust &amp; Explainable Deep Learning</h2>
+                </div>
+                <div class="clean-blog-post">
+                    <div class="row">
+                        <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                            <h3 style="font-family: 'Times New Roman Cyr';font-size: 25px;"><strong>Deep Learning for Spatiotemporal Modeling of Urbanization</strong><br></h3>
+                            <div class="info"><span style="font-size: 16px;font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[NeurIPS'21W&nbsp;<strong>Best Paper Award]</strong></span>&nbsp;Tang Li, Jing Gao, and Xi Peng.&nbsp;</span></div>
+                            <p style="font-size: 15px;color: var(--bs-gray-600);">Accepted and Best Paper awarded by NeurIPS 2021 Machine Learning in Public Health Workshop. </p><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/abs/2112.09668" style="margin-right: 20px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=3VyVck_gv4g" style="margin-right: 20px;" target="_blank">Video</a>
+                        </div>
+                        <div class="col-lg-5 col-xxl-4"><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/3VyVck_gv4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+                    </div>
+                </div>
+                <div class="clean-blog-post">
+                    <div class="row">
+                        <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                            <h3 style="font-family: 'Times New Roman Cyr';font-size: 25px;">Uncertainty-guided Model Generalization to Unseen Domains<br></h3>
+                            <div class="info"><span style="font-size: 16px;font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'21]</span>&nbsp;Fengchun Qiao and Xi Peng.&nbsp;</span></div>
+                            <p style="font-size: 15px;color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2021. (acceptance rate 23.4%) </p><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2103.07531.pdf" style="margin-right: 20px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=s9e-n3LOk8Q" style="margin-right: 20px;" target="_blank">Video</a>
+                        </div>
+                        <div class="col-lg-5 col-xxl-4"><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/s9e-n3LOk8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+                    </div>
+                </div>
+                <div class="clean-blog-post">
+                    <div class="row">
+                        <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                            <h3 style="font-family: 'Times New Roman Cyr';font-size: 25px;"><strong>SMIL: Multimodal Learning with Severely Missing Modality</strong><br></h3>
+                            <div class="info"><span style="font-size: 16px;font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[AAAI'21]</span>&nbsp;Mengmeng Ma, Jian Ren, Long Zhao,&nbsp;Sergey Tulyakov, Cathy Wu, Xi Peng.&nbsp;</span></div>
+                            <p style="font-size: 15px;color: var(--bs-gray-600);">In&nbsp;Proceedings of the Association for the Advancement of Artificial Intelligence, 2020. (acceptance rate 21%) </p><a class="btn btn-outline-primary" role="button" href="https://www.google.com/url?q=https%3A%2F%2Farxiv.org%2Fpdf%2F2012.01405.pdf&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHI_r83DnIWgj0xVcQtz_h1hp0M0w" style="margin-right: 20px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=1_yRw_W8KTc" style="margin-right: 20px;" target="_blank">Video</a>
+                        </div>
+                        <div class="col-lg-5 col-xxl-4"><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/75P535ob5-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+                    </div>
+                </div>
+                <div class="clean-blog-post">
+                    <div class="row">
+                        <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                            <h3 style="font-family: 'Times New Roman Cyr';font-size: 25px;"><strong>Learning to Learn Single Domain Generalization</strong><br></h3>
+                            <div class="info"><span style="font-size: 16px;font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'20]</span>&nbsp;Fengchun Qiao, Long Zhao, and Xi Peng.</span></div>
+                            <p style="font-size: 15px;color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2020. (acceptance rate 22%) </p><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2003.13216.pdf" style="margin-right: 20px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://youtu.be/ux4LkEZGPyw" style="margin-right: 20px;" target="_blank">Video</a>
+                        </div>
+                        <div class="col-lg-5 col-xxl-4"><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/ux4LkEZGPyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Uncertain Out-of-domain Robustness [CVPR'21]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/s9e-n3LOk8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">View-Disentangled Pose Repres&nbsp;<span style="font-weight: bold;">[CVPR'21 Oral]</span></p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/1_yRw_W8KTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">View-Disentangled Pose Repres [CVPR'21 Oral]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/1_yRw_W8KTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">Generator for HR Video Synthesis&nbsp;<span style="font-weight: bold;">[ICLR'21 Spotlight]</span></p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/bucl2kXMbSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Severely incomplete multimodal learning [AAAI'21]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/75P535ob5-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">Few-shot Multi-modal Learning&nbsp;<span style="font-weight: bold;">[CVPR'20]</span></p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/PodKLiW5AYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Generator for HR Video Synthesis [ICLR'21 Spotlight]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/bucl2kXMbSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">Adaptive Data Augmentation&nbsp;<span style="font-weight: bold;">[ICCV'19,CVPR'18]</span></p><img src="assets/img/home/jointly.png" style="width: 100%;">
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Few-Shot Domain Generalization [CVPR'20]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/ux4LkEZGPyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">GCN Representation Learning&nbsp;<span style="font-weight: bold;">[NeurIPS'19,KDD'19]</span> </p><img src="assets/img/home/rethinking.png" style="width: 100%;">
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Few-shot Multi-modal Learning [CVPR'20]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/PodKLiW5AYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Adaptive Data Augmentation [ICCV'19,CVPR'18]</p><img src="assets/img/home/jointly.png" style="width: 100%;">
-                    </div>
-                    <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">GCN Representation Learning [NeurIPS'19,KDD'19] </p><img src="assets/img/home/rethinking.png" style="width: 100%;">
-                    </div>
-                    <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Zero-shot Recognition [NeurIPS'19,CVPR'18]</p><img src="assets/img/home/EmbeddedImage.jpeg" style="width: 100%;">
+                        <p style="font-size: 13px;text-align: center;">Zero-shot Recognition&nbsp;<span style="font-weight: bold;">[NeurIPS'19,CVPR'18]</span></p><img src="assets/img/home/EmbeddedImage.jpeg" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -83,7 +131,7 @@
         <section class="clean-block clean-gallery dark" style="background: var(--bs-gray-100);">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Demos: Human-centered AI</h2>
+                    <h2 class="text-info">Research Direction 2: Human-centered AI</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-6 col-lg-4 item">
@@ -96,22 +144,22 @@
                         <p style="font-size: 13px;text-align: center;">ASL: Vision-based Translation and Generation</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/aSCzDCUl-Z8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">3D Facial Modeling [ECCV'18,ICCV'17] </p><img src="assets/img/home/facelandmark.png" style="width: 100%;">
+                        <p style="font-size: 13px;text-align: center;">3D Facial Modeling&nbsp;<span style="font-weight: bold;">[ECCV'18,ICCV'17]</span> </p><img src="assets/img/home/facelandmark.png" style="width: 100%;">
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">View-Disentangled Pose Repres. [CVPR'21 Oral ]</p><img src="assets/img/home/humanpose.png" style="width: 100%;">
+                        <p style="font-size: 13px;text-align: center;">View-Disentangled Pose Repres.&nbsp;<span style="font-weight: bold;">[CVPR'21 Oral]</span></p><img src="assets/img/home/humanpose.png" style="width: 100%;">
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">View-Disentangled Pose Repres. [CVPR'21 Oral ]</p><img src="assets/img/home/handpose.png" style="width: 100%;">
+                        <p style="font-size: 13px;text-align: center;">View-Disentangled Pose Repres.&nbsp;<span style="font-weight: bold;">[CVPR'21 Oral]</span></p><img src="assets/img/home/handpose.png" style="width: 100%;">
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Facial Landmark Tracking [ECCV'16]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/cPF80DXj_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">Facial Landmark Tracking&nbsp;<span style="font-weight: bold;">[ECCV'16]</span></p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/cPF80DXj_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Multiview Generation [IJCAI'18]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/fyUTne2B0QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">Multiview Generation&nbsp;<span style="font-weight: bold;">[IJCAI'18]</span></p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/fyUTne2B0QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                     <div class="col-md-6 col-lg-4 item">
-                        <p style="font-size: 13px;text-align: center;">Attribute Manipulation [IJCAI'18]</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/C0nnJgv6wJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <p style="font-size: 13px;text-align: center;">Attribute Manipulation&nbsp;<span style="font-weight: bold;">[IJCAI'18]</span></p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/C0nnJgv6wJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     </div>
                 </div>
             </div>
@@ -129,7 +177,7 @@
     </main>
     <footer class="page-footer dark">
         <div class="footer-copyright">
-            <p>© 2021 Copyright&nbsp; |&nbsp; Deep-REAL</p>
+            <p>Deep-REAL © 2021 Copyright&nbsp; |&nbsp; designed by <span style="font-style: italic;">Tang Li</span></p>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
