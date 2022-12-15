@@ -1,0 +1,35 @@
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /*top: 50px;*/
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  /*width: 260px;*/
+  /*background-color: #555;*/
+  /*color: #fff;*/
+  /*text-align: center;*/
+  /*border-radius: 6px;*/
+  /*padding: 8px 0;*/
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  /*margin-left: -130px;*/
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+}
+
