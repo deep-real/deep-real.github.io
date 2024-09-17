@@ -113,169 +113,139 @@
                 <div id="robust_optimization" class="block-content" style="margin-bottom: 60px;padding-right: 10px;padding-left: 10px;">
                     <div class="col">
                         <h1 style="font-size: calc(15pt + 0.7vw);text-align: center;margin-bottom: 20px;">Robust Optimization</h1>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-top: 30px;padding-bottom: 30px;padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Ensemble Pruning for Out-of-distribution Generalization</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICML'24<strong>]</strong></span>&nbsp;Fengchun Qiao and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the International Conference on Machine Learning, 2024. (acceptance rate 27.5%)</p>
-                                                <div id="icml24_qiao_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openreview.net/pdf/e5517ab786357cdf75bdd49c92ed293da740446e.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://github.com/joffery/TEP" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Code</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;margin-left: 0px;width: 95px;" data-bs-toggle="collapse" data-bs-target="#icml24_qiao_abs" aria-expanded="false" aria-controls="icml24_qiao_abs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#icml24_qiao" aria-expanded="false" aria-controls="icml24_qiao">BibTeX</button>
-                                                    <div id="icml24_qiao" class="collapse" data-bs-parent="#icml24_qiao_group">
-                                                        <div class="card">
-                                                            <div class="card-body" style="background: var(--bs-light);"><code>@inproceedings{qiao2024ensemble,<br>&nbsp;title={Ensemble Pruning for Out-of-distribution Generalization},<br>&nbsp;author={Qiao, Fengchun and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the International Conference on Machine Learning (ICML)},<br>&nbsp;year={2024}<br>}</code></div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="icml24_qiao_abs" class="collapse" data-bs-parent="#icml24_qiao_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Ensemble of deep neural networks has achieved great success in hedging against single-model failure under distribution shift. However, existing techniques suffer from producing redundant models, limiting predictive diversity and yielding compromised generalization performance. Existing ensemble pruning methods can only guarantee predictive diversity for in-distribution data, which may not transfer well to out-of-distribution (OoD) data. To address this gap, we propose a principled optimization framework for ensemble pruning under distribution shifts. Since the annotations of test data are not available, we explore relationships between prediction distributions of the models, encapsulated in a topology graph. By incorporating this topology into a combinatorial optimization framework, complementary models with high predictive diversity are selected with theoretical guarantees. Our approach is model-agnostic and can be applied on top of a broad spectrum of off-the-shelf ensembling methods for improved generalization performance. Experiments on common benchmarks demonstrate the superiority of our approach in both multi- and single-source OoD generalization.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        <div class="clean-blog-post">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Ensemble Pruning for Out-of-distribution Generalization</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICML'24<strong>]</strong></span>&nbsp;Fengchun Qiao and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the International Conference on Machine Learning, 2024. (acceptance rate 27.5%)</p>
+                                    <div id="icml24_qiao_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openreview.net/pdf/e5517ab786357cdf75bdd49c92ed293da740446e.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://github.com/joffery/TEP" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Code</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;margin-left: 0px;width: 95px;" data-bs-toggle="collapse" data-bs-target="#icml24_qiao_abs" aria-expanded="false" aria-controls="icml24_qiao_abs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#icml24_qiao" aria-expanded="false" aria-controls="icml24_qiao">BibTeX</button>
+                                        <div id="icml24_qiao" class="collapse" data-bs-parent="#icml24_qiao_group">
+                                            <div class="card">
+                                                <div class="card-body" style="background: var(--bs-light);"><code>@inproceedings{qiao2024ensemble,<br>&nbsp;title={Ensemble Pruning for Out-of-distribution Generalization},<br>&nbsp;author={Qiao, Fengchun and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the International Conference on Machine Learning (ICML)},<br>&nbsp;year={2024}<br>}</code></div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICML</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/yljBxVG93Uw?si=OYY18lzGHj-mLyOf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="icml24_qiao_abs" class="collapse" data-bs-parent="#icml24_qiao_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Ensemble of deep neural networks has achieved great success in hedging against single-model failure under distribution shift. However, existing techniques suffer from producing redundant models, limiting predictive diversity and yielding compromised generalization performance. Existing ensemble pruning methods can only guarantee predictive diversity for in-distribution data, which may not transfer well to out-of-distribution (OoD) data. To address this gap, we propose a principled optimization framework for ensemble pruning under distribution shifts. Since the annotations of test data are not available, we explore relationships between prediction distributions of the models, encapsulated in a topology graph. By incorporating this topology into a combinatorial optimization framework, complementary models with high predictive diversity are selected with theoretical guarantees. Our approach is model-agnostic and can be applied on top of a broad spectrum of off-the-shelf ensembling methods for improved generalization performance. Experiments on common benchmarks demonstrate the superiority of our approach in both multi- and single-source OoD generalization.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICML</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/yljBxVG93Uw?si=OYY18lzGHj-mLyOf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Beyond the Federation: Topology-aware Federated Learning for Generalization to Unseen Clients</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICML'24<strong>]</strong></span>&nbsp;Mengmeng Ma, Tang Li, and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the International Conference on Machine Learning, 2024. (acceptance rate 27.5%)</p>
-                                                <div id="icml24_ma_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2407.04949v1" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://github.com/mengmenm/TFL-OOF" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Code</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#icml24_ma_abs-2" aria-expanded="false" aria-controls="icml24_ma_abs-2">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#icml24_ma-2" aria-expanded="false" aria-controls="icml24_ma-2">BibTeX</button>
-                                                    <div id="icml24_ma-2" class="collapse" data-bs-parent="#icml24_ma_group-2">
-                                                        <div class="card">
-                                                            <div class="card-body" style="background: var(--bs-light);"><code>@inproceedings{ma2024beyond,<br>&nbsp;title={Beyond the Federation: Topology-aware Federated Learning for Generalization to Unseen Clients},<br>&nbsp;author={Ma, Mengmeng and Li, Tang and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the International Conference on Machine Learning (ICML)},<br>&nbsp;year={2024}<br>}</code></div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="icml24_ma_abs-2" class="collapse" data-bs-parent="#icml24_ma_group-2">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Federated Learning is widely employed to tackle distributed sensitive data. Existing methods primarily focus on addressing in-federation data heterogeneity. However, we observed that they suffer from significant performance degradation when applied to unseen clients for out-of-federation (OOF) generalization. The recent attempts to address generalization to unseen clients generally struggle to scale up to large-scale distributed settings due to high communication or computation costs. Moreover, methods that scale well often demonstrate poor generalization capability. To achieve OOF-resiliency in a scalable manner, we propose Topology-aware Federated Learning (TFL) that leverages client topology - a graph representing client relationships - to effectively train robust models against OOF data. We formulate a novel optimization problem for TFL, consisting of two key modules: Client Topology Learning, which infers the client relationships in a privacy-preserving manner, and Learning on Client Topology, which leverages the learned topology to identify influential clients and harness this information into the FL optimization process to efficiently build robust models. Empirical evaluation on a variety of real-world datasets verifies TFL’s superior OOF robustness and scalability.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Beyond the Federation: Topology-aware Federated Learning for Generalization to Unseen Clients</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICML'24<strong>]</strong></span>&nbsp;Mengmeng Ma, Tang Li, and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the International Conference on Machine Learning, 2024. (acceptance rate 27.5%)</p>
+                                    <div id="icml24_ma_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2407.04949v1" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://github.com/mengmenm/TFL-OOF" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Code</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#icml24_ma_abs-2" aria-expanded="false" aria-controls="icml24_ma_abs-2">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#icml24_ma-2" aria-expanded="false" aria-controls="icml24_ma-2">BibTeX</button>
+                                        <div id="icml24_ma-2" class="collapse" data-bs-parent="#icml24_ma_group-2">
+                                            <div class="card">
+                                                <div class="card-body" style="background: var(--bs-light);"><code>@inproceedings{ma2024beyond,<br>&nbsp;title={Beyond the Federation: Topology-aware Federated Learning for Generalization to Unseen Clients},<br>&nbsp;author={Ma, Mengmeng and Li, Tang and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the International Conference on Machine Learning (ICML)},<br>&nbsp;year={2024}<br>}</code></div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICML</p><div class="iframe-container"><iframe width="352" height="198" src="https://drive.google.com/file/d/1uPGpFzsk_SgV_MA-qnY9k6QlMoyaTqrD/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="icml24_ma_abs-2" class="collapse" data-bs-parent="#icml24_ma_group-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Federated Learning is widely employed to tackle distributed sensitive data. Existing methods primarily focus on addressing in-federation data heterogeneity. However, we observed that they suffer from significant performance degradation when applied to unseen clients for out-of-federation (OOF) generalization. The recent attempts to address generalization to unseen clients generally struggle to scale up to large-scale distributed settings due to high communication or computation costs. Moreover, methods that scale well often demonstrate poor generalization capability. To achieve OOF-resiliency in a scalable manner, we propose Topology-aware Federated Learning (TFL) that leverages client topology - a graph representing client relationships - to effectively train robust models against OOF data. We formulate a novel optimization problem for TFL, consisting of two key modules: Client Topology Learning, which infers the client relationships in a privacy-preserving manner, and Learning on Client Topology, which leverages the learned topology to identify influential clients and harness this information into the FL optimization process to efficiently build robust models. Empirical evaluation on a variety of real-world datasets verifies TFL’s superior OOF robustness and scalability.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICML</p><div class="iframe-container"><iframe width="352" height="198" src="https://drive.google.com/file/d/1uPGpFzsk_SgV_MA-qnY9k6QlMoyaTqrD/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Topology-aware Robust Optimization for Out-of-Distribution Generalization</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICLR'23<strong>]</strong></span>&nbsp;Fengchun Qiao and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the International Conference on Learning Representations, 2023. (acceptance rate 31.8%)</p>
-                                                <div id="iclr23_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openreview.net/pdf?id=ylMq8MBnAp" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr23abs" aria-expanded="false" aria-controls="iclr23abs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr23" aria-expanded="false" aria-controls="iclr23">BibTeX</button>
-                                                    <div id="iclr23" class="collapse" data-bs-parent="#iclr23_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{qiao2023topology,<br>&nbsp;title={Topology-aware Robust Optimization for Out-of-Distribution Generalization},<br>&nbsp;author={Qiao, Fengchun and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the International Conference on Learning Representations (ICLR)},<br>&nbsp;year={2023}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="iclr23abs" class="collapse" data-bs-parent="#iclr23_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Out-of-distribution (OOD) generalization is a challenging machine learning problem yet highly desirable in many high-stake applications. Existing methods suffer from overly pessimistic modeling with low generalization confidence. As generalizing to arbitrary test distributions is impossible, we hypothesize that further structure on the topology of distributions is crucial in developing strong OOD resilience. To this end, we propose topology-aware robust optimization (TRO) that seamlessly integrates distributional topology in a principled optimization framework. More specifically, TRO solves two optimization objectives: (1) Topology Learning which explores data manifold to uncover the distributional topology; (2) Learning on Topology which exploits the topology to constrain robust optimization for tightly-bounded generalization risks. We theoretically demonstrate the effectiveness of our approach, and empirically show that it significantly outperforms the state of the arts in a wide range of tasks including classification, regression, and semantic segmentation. Moreover, we empirically find the data-driven distributional topology is consistent with domain knowledge, enhancing the explainability of our approach.&nbsp;</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Topology-aware Robust Optimization for Out-of-Distribution Generalization</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICLR'23<strong>]</strong></span>&nbsp;Fengchun Qiao and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the International Conference on Learning Representations, 2023. (acceptance rate 31.8%)</p>
+                                    <div id="iclr23_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openreview.net/pdf?id=ylMq8MBnAp" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr23abs" aria-expanded="false" aria-controls="iclr23abs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr23" aria-expanded="false" aria-controls="iclr23">BibTeX</button>
+                                        <div id="iclr23" class="collapse" data-bs-parent="#iclr23_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{qiao2023topology,<br>&nbsp;title={Topology-aware Robust Optimization for Out-of-Distribution Generalization},<br>&nbsp;author={Qiao, Fengchun and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the International Conference on Learning Representations (ICLR)},<br>&nbsp;year={2023}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICLR</p><img src="assets/img/conference/TRO.jpg">
+                                        </div>
+                                        <div id="iclr23abs" class="collapse" data-bs-parent="#iclr23_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Out-of-distribution (OOD) generalization is a challenging machine learning problem yet highly desirable in many high-stake applications. Existing methods suffer from overly pessimistic modeling with low generalization confidence. As generalizing to arbitrary test distributions is impossible, we hypothesize that further structure on the topology of distributions is crucial in developing strong OOD resilience. To this end, we propose topology-aware robust optimization (TRO) that seamlessly integrates distributional topology in a principled optimization framework. More specifically, TRO solves two optimization objectives: (1) Topology Learning which explores data manifold to uncover the distributional topology; (2) Learning on Topology which exploits the topology to constrain robust optimization for tightly-bounded generalization risks. We theoretically demonstrate the effectiveness of our approach, and empirically show that it significantly outperforms the state of the arts in a wide range of tasks including classification, regression, and semantic segmentation. Moreover, we empirically find the data-driven distributional topology is consistent with domain knowledge, enhancing the explainability of our approach.&nbsp;</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICLR</p><img src="assets/img/conference/TRO.jpg">
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Out-of-Domain Generalization from a Single&nbsp;Source: An Uncertainty Quantification Approach</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[TPAMI'22<strong>]</strong></span>&nbsp;Xi Peng, Fengchun Qiao, and Long Zhao.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.&nbsp;<span style="font-weight: bold;font-style: italic;color: var(--bs-gray-900);">(Impact Factor 24.3)</span></p>
-                                                <div id="tpami_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://ieeexplore.ieee.org/document/9801711" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#tpami22abs" aria-expanded="false" aria-controls="tpami22abs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#tpami22" aria-expanded="false" aria-controls="tpami22">BibTeX</button>
-                                                    <div id="tpami22" class="collapse" data-bs-parent="#tpami_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@article{peng2022out,<br>&nbsp;title={Out-of-Domain Generalization From a Single Source: An Uncertainty Quantification Approach},<br>&nbsp;author={Peng, Xi and Qiao, Fengchun and Zhao, Long},<br>&nbsp;journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>&nbsp;year={2022},<br>&nbsp;publisher={IEEE}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="tpami22abs" class="collapse" data-bs-parent="#tpami_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">We are concerned with a worst-case scenario in model generalization, in the sense that a model aims to perform well on many unseen domains while there is only one single domain available for training. We propose Meta-Learning based Adversarial Domain Augmentation to solve this Out-of-Domain generalization problem. The key idea is to leverage adversarial training to create “fictitious” yet “challenging” populations, from which a model can learn to generalize with theoretical guarantees. To facilitate fast and desirable domain augmentation, we cast the model training in a meta-learning scheme and use a Wasserstein Auto-Encoder to relax the widely used worst-case constraint. We further improve our method by integrating uncertainty quantification for efficient domain generalization. Extensive experiments on multiple benchmark datasets indicate its superior performance in tackling single domain generalization.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Out-of-Domain Generalization from a Single&nbsp;Source: An Uncertainty Quantification Approach</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[TPAMI'22<strong>]</strong></span>&nbsp;Xi Peng, Fengchun Qiao, and Long Zhao.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022.&nbsp;<span style="font-weight: bold;font-style: italic;color: var(--bs-gray-900);">(Impact Factor 24.3)</span></p>
+                                    <div id="tpami_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://ieeexplore.ieee.org/document/9801711" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#tpami22abs" aria-expanded="false" aria-controls="tpami22abs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#tpami22" aria-expanded="false" aria-controls="tpami22">BibTeX</button>
+                                        <div id="tpami22" class="collapse" data-bs-parent="#tpami_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@article{peng2022out,<br>&nbsp;title={Out-of-Domain Generalization From a Single Source: An Uncertainty Quantification Approach},<br>&nbsp;author={Peng, Xi and Qiao, Fengchun and Zhao, Long},<br>&nbsp;journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},<br>&nbsp;year={2022},<br>&nbsp;publisher={IEEE}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">TPAMI</p><img src="assets/img/journal/Out-of-Domain%20Generalization%20from%20a%20Single.jpg">
+                                        </div>
+                                        <div id="tpami22abs" class="collapse" data-bs-parent="#tpami_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">We are concerned with a worst-case scenario in model generalization, in the sense that a model aims to perform well on many unseen domains while there is only one single domain available for training. We propose Meta-Learning based Adversarial Domain Augmentation to solve this Out-of-Domain generalization problem. The key idea is to leverage adversarial training to create “fictitious” yet “challenging” populations, from which a model can learn to generalize with theoretical guarantees. To facilitate fast and desirable domain augmentation, we cast the model training in a meta-learning scheme and use a Wasserstein Auto-Encoder to relax the widely used worst-case constraint. We further improve our method by integrating uncertainty quantification for efficient domain generalization. Extensive experiments on multiple benchmark datasets indicate its superior performance in tackling single domain generalization.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">TPAMI</p><img src="assets/img/journal/Out-of-Domain%20Generalization%20from%20a%20Single.jpg">
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Learning to Learn Single Domain Generalization</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'20]</span>&nbsp;Fengchun Qiao, Long Zhao, and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2020. (acceptance rate 22%) </p>
-                                                <div id="cvpr20fengchun_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2003.13216.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://youtu.be/ux4LkEZGPyw" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr20fengchunabs" aria-expanded="false" aria-controls="cvpr20fengchunabs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr20fengchun" aria-expanded="false" aria-controls="cvpr20fengchun">BibTeX</button>
-                                                    <div id="cvpr20fengchun" class="collapse" data-bs-parent="#cvpr20fengchun_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{qiao2020learning,<br>&nbsp;title={Learning to learn single domain generalization},<br>&nbsp;author={Qiao, Fengchun and Zhao, Long and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>&nbsp;pages={12556--12565},<br>&nbsp;year={2020}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="cvpr20fengchunabs" class="collapse" data-bs-parent="#cvpr20fengchun_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">We are concerned with a worst-case scenario in model generalization, in the sense that a model aims to perform well on many unseen domains while there is only one single domain available for training. We propose a new method named adversarial domain augmentation to solve this Out-of-Distribution (OOD) generalization problem. The key idea is to leverage adversarial training to create “fictitious” yet “challenging” populations, from which a model can learn to generalize with theoretical guarantees. To facilitate fast and desirable domain augmentation, we cast the model training in a meta-learning scheme and use a Wasserstein Auto-Encoder (WAE) to relax the widely used worst-case constraint. Detailed theoretical analysis is provided to testify our formulation, while extensive experiments on multiple benchmark datasets indicate its superior performance in tackling single domain generalization.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 0px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Learning to Learn Single Domain Generalization</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'20]</span>&nbsp;Fengchun Qiao, Long Zhao, and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2020. (acceptance rate 22%) </p>
+                                    <div id="cvpr20fengchun_group" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2003.13216.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://youtu.be/ux4LkEZGPyw" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr20fengchunabs" aria-expanded="false" aria-controls="cvpr20fengchunabs">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr20fengchun" aria-expanded="false" aria-controls="cvpr20fengchun">BibTeX</button>
+                                        <div id="cvpr20fengchun" class="collapse" data-bs-parent="#cvpr20fengchun_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{qiao2020learning,<br>&nbsp;title={Learning to learn single domain generalization},<br>&nbsp;author={Qiao, Fengchun and Zhao, Long and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>&nbsp;pages={12556--12565},<br>&nbsp;year={2020}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">CVPR</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/ux4LkEZGPyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="cvpr20fengchunabs" class="collapse" data-bs-parent="#cvpr20fengchun_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">We are concerned with a worst-case scenario in model generalization, in the sense that a model aims to perform well on many unseen domains while there is only one single domain available for training. We propose a new method named adversarial domain augmentation to solve this Out-of-Distribution (OOD) generalization problem. The key idea is to leverage adversarial training to create “fictitious” yet “challenging” populations, from which a model can learn to generalize with theoretical guarantees. To facilitate fast and desirable domain augmentation, we cast the model training in a meta-learning scheme and use a Wasserstein Auto-Encoder (WAE) to relax the widely used worst-case constraint. Detailed theoretical analysis is provided to testify our formulation, while extensive experiments on multiple benchmark datasets indicate its superior performance in tackling single domain generalization.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">CVPR</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/ux4LkEZGPyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                                 </div>
                             </div>
                         </div>
@@ -284,169 +254,139 @@
                 <div id="xml" class="block-content" style="margin-bottom: 60px;padding-right: 10px;padding-left: 10px;">
                     <div class="col">
                         <h1 style="font-size: calc(15pt + 0.7vw);text-align: center;margin-bottom: 20px;">Explainable Machine Learning</h1>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>DEAL: Disentangle and Localize Concept-level Explanations for VLMs</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ECCV'24<strong>]</strong></span>&nbsp;Tang Li, Mengmeng Ma, and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the European Conference on Computer Vision (ECCV), 2024. (acceptance rate 27.9%)</p>
-                                                <div id="eccv24_li_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2407.14412" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#eccv24_li_abs-1" aria-expanded="false" aria-controls="eccv24_li_abs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#eccv24_li-1" aria-expanded="false" aria-controls="eccv24_li-1">BibTeX</button>
-                                                    <div id="eccv24_li-1" class="collapse" data-bs-parent="#eccv24_li_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body" style="background: var(--bs-light);"><code>@inproceedings{li2024deal,<br>&nbsp;title={DEAL: Disentangle and Localize Concept-level Explanations for VLMs},<br>&nbsp;author={Li, Tang and Ma, Mengmeng and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},<br>&nbsp;year={2024}<br>}</code></div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="eccv24_li_abs-1" class="collapse" data-bs-parent="#eccv24_li_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Large pre-trained Vision-Language Models (VLMs) have become ubiquitous foundational components of other models and downstream tasks. Although powerful, our empirical results reveal that such models might not be able to identify fine-grained concepts. Specifically, the explanations of VLMs with respect to fine-grained concepts are entangled and mislocalized. To address this issue, we propose to DisEntAngle and Localize (DEAL) the concept-level explanations for VLMs without human annotations. The key idea is encouraging the concept-level explanations to be distinct while maintaining consistency with category-level explanations. We conduct extensive experiments and ablation studies on a wide range of benchmark datasets and vision-language models. Our empirical results demonstrate that the proposed method significantly improves the concept-level explanations of the model in terms of disentanglability and localizability. Surprisingly, the improved explainability alleviates the model's reliance on spurious correlations, which further benefits the prediction accuracy.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>DEAL: Disentangle and Localize Concept-level Explanations for VLMs</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ECCV'24<strong>]</strong></span>&nbsp;Tang Li, Mengmeng Ma, and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the European Conference on Computer Vision (ECCV), 2024. (acceptance rate 27.9%)</p>
+                                    <div id="eccv24_li_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2407.14412" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#eccv24_li_abs-1" aria-expanded="false" aria-controls="eccv24_li_abs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#eccv24_li-1" aria-expanded="false" aria-controls="eccv24_li-1">BibTeX</button>
+                                        <div id="eccv24_li-1" class="collapse" data-bs-parent="#eccv24_li_group-1">
+                                            <div class="card">
+                                                <div class="card-body" style="background: var(--bs-light);"><code>@inproceedings{li2024deal,<br>&nbsp;title={DEAL: Disentangle and Localize Concept-level Explanations for VLMs},<br>&nbsp;author={Li, Tang and Ma, Mengmeng and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},<br>&nbsp;year={2024}<br>}</code></div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ECCV</p><img src="assets/img/conference/DEAL.png">
+                                        </div>
+                                        <div id="eccv24_li_abs-1" class="collapse" data-bs-parent="#eccv24_li_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">Large pre-trained Vision-Language Models (VLMs) have become ubiquitous foundational components of other models and downstream tasks. Although powerful, our empirical results reveal that such models might not be able to identify fine-grained concepts. Specifically, the explanations of VLMs with respect to fine-grained concepts are entangled and mislocalized. To address this issue, we propose to DisEntAngle and Localize (DEAL) the concept-level explanations for VLMs without human annotations. The key idea is encouraging the concept-level explanations to be distinct while maintaining consistency with category-level explanations. We conduct extensive experiments and ablation studies on a wide range of benchmark datasets and vision-language models. Our empirical results demonstrate that the proposed method significantly improves the concept-level explanations of the model in terms of disentanglability and localizability. Surprisingly, the improved explainability alleviates the model's reliance on spurious correlations, which further benefits the prediction accuracy.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ECCV</p><img src="assets/img/conference/DEAL.png">
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Are Data-driven Explanations Robust against Out-of-distribution Data?</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'23<strong>]</strong></span>&nbsp;Tang Li, Fengchun Qiao, Mengmeng Ma, and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2023. (acceptance rate 25.8%)</p>
-                                                <div id="cvpr23_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Are_Data-Driven_Explanations_Robust_Against_Out-of-Distribution_Data_CVPR_2023_paper.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=4-8zMdB83x8" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr23abs-1" aria-expanded="false" aria-controls="cvpr23abs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr23-1" aria-expanded="false" aria-controls="cvpr23-1">BibTeX</button>
-                                                    <div id="cvpr23-1" class="collapse" data-bs-parent="#cvpr23_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{tang2023dre,<br>&nbsp;title={Are Data-driven Explanations Robust against Out-of-distribution Data?},<br>&nbsp;author={Li, Tang and Qiao, Fengchun and Ma, Mengmeng and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>&nbsp;year={2023}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="cvpr23abs-1" class="collapse" data-bs-parent="#cvpr23_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">As black-box models increasingly power high-stakes applications, a variety of data-driven explanation methods have been introduced. Meanwhile, machine learning models are constantly challenged by distributional shifts. A question naturally arises: Are data-driven explanations robust against out-of-distribution data? Our empirical results show that even though made accurate predictions, the model might still yield unreliable explanations under distribution shifts. How to develop robust explanations against out-of-distribution data? To address this problem, we propose an end-to-end model-agnostic learning framework Distributionally Robust Explanations (DRE). The key idea is, inspired by self-supervised learning, to fully utilizes the inter-distribution information to provide supervisory signals for the learning of explanations without human annotation. Can robust explanations benefit the model’s generalization capability? We conduct extensive experiments on a wide range of tasks and data types, including classification and regression on image and scientific tabular data. Our results demonstrate that the proposed method significantly improves the model performance in terms of explanation and prediction robustness against distributional shifts.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Are Data-driven Explanations Robust against Out-of-distribution Data?</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'23<strong>]</strong></span>&nbsp;Tang Li, Fengchun Qiao, Mengmeng Ma, and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2023. (acceptance rate 25.8%)</p>
+                                    <div id="cvpr23_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Are_Data-Driven_Explanations_Robust_Against_Out-of-Distribution_Data_CVPR_2023_paper.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=4-8zMdB83x8" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr23abs-1" aria-expanded="false" aria-controls="cvpr23abs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr23-1" aria-expanded="false" aria-controls="cvpr23-1">BibTeX</button>
+                                        <div id="cvpr23-1" class="collapse" data-bs-parent="#cvpr23_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{tang2023dre,<br>&nbsp;title={Are Data-driven Explanations Robust against Out-of-distribution Data?},<br>&nbsp;author={Li, Tang and Qiao, Fengchun and Ma, Mengmeng and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br>&nbsp;year={2023}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">CVPR</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/4-8zMdB83x8?si=vNvGrIZoOhbn9tVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="cvpr23abs-1" class="collapse" data-bs-parent="#cvpr23_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="margin-bottom: 0px;font-size: 12px;text-align: justify;">As black-box models increasingly power high-stakes applications, a variety of data-driven explanation methods have been introduced. Meanwhile, machine learning models are constantly challenged by distributional shifts. A question naturally arises: Are data-driven explanations robust against out-of-distribution data? Our empirical results show that even though made accurate predictions, the model might still yield unreliable explanations under distribution shifts. How to develop robust explanations against out-of-distribution data? To address this problem, we propose an end-to-end model-agnostic learning framework Distributionally Robust Explanations (DRE). The key idea is, inspired by self-supervised learning, to fully utilizes the inter-distribution information to provide supervisory signals for the learning of explanations without human annotation. Can robust explanations benefit the model’s generalization capability? We conduct extensive experiments on a wide range of tasks and data types, including classification and regression on image and scientific tabular data. Our results demonstrate that the proposed method significantly improves the model performance in terms of explanation and prediction robustness against distributional shifts.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">CVPR</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/4-8zMdB83x8?si=vNvGrIZoOhbn9tVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Deep Learning for Spatiotemporal Modeling of Urbanization</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[NeurIPS'21W]</span>&nbsp;Tang Li, Jing Gao, and Xi Peng.&nbsp;</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);"><span style="font-weight: bold;font-style: italic;color: var(--bs-gray-900);">Best Paper Award</span>&nbsp;of NeurIPS 2021 Machine Learning in Public Health Workshop. </p>
-                                                <div id="neurips21w_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2112.09668.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=3VyVck_gv4g" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#neurips21wabs-1" aria-expanded="false" aria-controls="neurips21wabs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#neurips21w-1" aria-expanded="false" aria-controls="neurips21w-1">BibTeX</button><a class="btn btn-outline-primary" role="button" href="https://sites.google.com/nyu.edu/mlph2021/accepted-papers?authuser=0#:~:text=Deep%20Learning%20for%20Spatiotemporal,Peng%20(University%20of%20Delaware)" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Award</a>
-                                                    <div id="neurips21w-1" class="collapse" data-bs-parent="#neurips21w_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@article{li2021deep,<br>title={Deep Learning for Spatiotemporal Modeling of Urbanization},<br>author={Tang Li and Gao, Jing and Xi Peng},<br>journal={Advances in Neural Information Processing Systems Workshops (Best Paper Award)},<br>year={2021}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="neurips21wabs-1" class="collapse" data-bs-parent="#neurips21w_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Urbanization has a strong impact on the health and wellbeing of populations across the world. Predictive spatial modeling of urbanization therefore can be a useful tool for effective public health planning. Many spatial urbanization models have been developed using classic machine learning and numerical modeling techniques. However, deep learning with its proven capacity to capture complex spatiotemporal phenomena has not been applied to urbanization modeling. Here we explore the capacity of deep spatial learning for the predictive modeling of urbanization. We treat numerical geospatial data as images with pixels and channels, and enrich the dataset by augmentation, in order to leverage the high capacity of deep learning. Our resulting model can generate end-to-end multi-variable urbanization predictions, and outperforms a state-of-the-art classic machine learning urbanization model in preliminary comparisons.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Deep Learning for Spatiotemporal Modeling of Urbanization</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[NeurIPS'21W]</span>&nbsp;Tang Li, Jing Gao, and Xi Peng.&nbsp;</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);"><span style="font-weight: bold;font-style: italic;color: var(--bs-gray-900);">Best Paper Award</span>&nbsp;of NeurIPS 2021 Machine Learning in Public Health Workshop. </p>
+                                    <div id="neurips21w_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2112.09668.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=3VyVck_gv4g" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#neurips21wabs-1" aria-expanded="false" aria-controls="neurips21wabs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#neurips21w-1" aria-expanded="false" aria-controls="neurips21w-1">BibTeX</button><a class="btn btn-outline-primary" role="button" href="https://sites.google.com/nyu.edu/mlph2021/accepted-papers?authuser=0#:~:text=Deep%20Learning%20for%20Spatiotemporal,Peng%20(University%20of%20Delaware)" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Award</a>
+                                        <div id="neurips21w-1" class="collapse" data-bs-parent="#neurips21w_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@article{li2021deep,<br>title={Deep Learning for Spatiotemporal Modeling of Urbanization},<br>author={Tang Li and Gao, Jing and Xi Peng},<br>journal={Advances in Neural Information Processing Systems Workshops (Best Paper Award)},<br>year={2021}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">NeurIPS</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/3VyVck_gv4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="neurips21wabs-1" class="collapse" data-bs-parent="#neurips21w_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Urbanization has a strong impact on the health and wellbeing of populations across the world. Predictive spatial modeling of urbanization therefore can be a useful tool for effective public health planning. Many spatial urbanization models have been developed using classic machine learning and numerical modeling techniques. However, deep learning with its proven capacity to capture complex spatiotemporal phenomena has not been applied to urbanization modeling. Here we explore the capacity of deep spatial learning for the predictive modeling of urbanization. We treat numerical geospatial data as images with pixels and channels, and enrich the dataset by augmentation, in order to leverage the high capacity of deep learning. Our resulting model can generate end-to-end multi-variable urbanization predictions, and outperforms a state-of-the-art classic machine learning urbanization model in preliminary comparisons.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">NeurIPS</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/3VyVck_gv4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>A Good Image Generator Is What You Need for High-Resolution Video Synthesis</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICLR'21 Spotlight]</span>&nbsp;Yu Tian, Jian Ren, Menglei Chai, Kyle Olszewski, Xi Peng, Dimitris N. Metaxas, Sergey Tulyakov.</span></div>
-                                                <div id="iclr21_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openreview.net/forum?id=6puCSjH3hwA" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://papertalk.org/papertalks/29015" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><a class="btn btn-outline-primary" role="button" href="https://github.com/snap-research/MoCoGAN-HD" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Code</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr21abs-1" aria-expanded="false" aria-controls="iclr21abs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr21-1" aria-expanded="false" aria-controls="iclr21-1">BibTeX</button>
-                                                    <div id="iclr21-1" class="collapse" data-bs-parent="#iclr21_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{tian2020good,<br>&nbsp;title={A Good Image Generator Is What You Need for High-Resolution Video Synthesis},<br>&nbsp;author={Tian, Yu and Ren, Jian and Chai, Menglei and Olszewski, Kyle and Peng, Xi and Metaxas, Dimitris N and Tulyakov, Sergey},<br>&nbsp;booktitle={International Conference on Learning Representations},<br>&nbsp;year={2020}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="iclr21abs-1" class="collapse" data-bs-parent="#iclr21_group-1">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image-based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>A Good Image Generator Is What You Need for High-Resolution Video Synthesis</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICLR'21 Spotlight]</span>&nbsp;Yu Tian, Jian Ren, Menglei Chai, Kyle Olszewski, Xi Peng, Dimitris N. Metaxas, Sergey Tulyakov.</span></div>
+                                    <div id="iclr21_group-1" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openreview.net/forum?id=6puCSjH3hwA" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://papertalk.org/papertalks/29015" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><a class="btn btn-outline-primary" role="button" href="https://github.com/snap-research/MoCoGAN-HD" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Code</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr21abs-1" aria-expanded="false" aria-controls="iclr21abs-1">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#iclr21-1" aria-expanded="false" aria-controls="iclr21-1">BibTeX</button>
+                                        <div id="iclr21-1" class="collapse" data-bs-parent="#iclr21_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{tian2020good,<br>&nbsp;title={A Good Image Generator Is What You Need for High-Resolution Video Synthesis},<br>&nbsp;author={Tian, Yu and Ren, Jian and Chai, Menglei and Olszewski, Kyle and Peng, Xi and Metaxas, Dimitris N and Tulyakov, Sergey},<br>&nbsp;booktitle={International Conference on Learning Representations},<br>&nbsp;year={2020}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICLR</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/bucl2kXMbSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="iclr21abs-1" class="collapse" data-bs-parent="#iclr21_group-1">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image-based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICLR</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/bucl2kXMbSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>AdaTransform: Adaptive Data Transformation</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICCV'19 Oral]</span>&nbsp;Zhiqiang Tang, Xi Peng , Tingfeng Li, Yizhe Zhu, Dimitris N Metaxas.</span></div>
-                                                <div id="iclr21_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Tang_AdaTransform_Adaptive_Data_Transformation_ICCV_2019_paper.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a>
-                                                    <div id="iclr-2" class="collapse" data-bs-parent="#iclr21_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{tian2020good,<br>&nbsp;title={A Good Image Generator Is What You Need for High-Resolution Video Synthesis},<br>&nbsp;author={Tian, Yu and Ren, Jian and Chai, Menglei and Olszewski, Kyle and Peng, Xi and Metaxas, Dimitris N and Tulyakov, Sergey},<br>&nbsp;booktitle={International Conference on Learning Representations},<br>&nbsp;year={2020}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="iclr21abs-2" class="collapse" data-bs-parent="#iclr21_group">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image-based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 0px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>AdaTransform: Adaptive Data Transformation</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[ICCV'19 Oral]</span>&nbsp;Zhiqiang Tang, Xi Peng , Tingfeng Li, Yizhe Zhu, Dimitris N Metaxas.</span></div>
+                                    <div id="iclr21_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Tang_AdaTransform_Adaptive_Data_Transformation_ICCV_2019_paper.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a>
+                                        <div id="iclr-2" class="collapse" data-bs-parent="#iclr21_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{tian2020good,<br>&nbsp;title={A Good Image Generator Is What You Need for High-Resolution Video Synthesis},<br>&nbsp;author={Tian, Yu and Ren, Jian and Chai, Menglei and Olszewski, Kyle and Peng, Xi and Metaxas, Dimitris N and Tulyakov, Sergey},<br>&nbsp;booktitle={International Conference on Learning Representations},<br>&nbsp;year={2020}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICCV</p><img src="assets/img/conference/AdaTransform.jpeg">
+                                        </div>
+                                        <div id="iclr21abs-2" class="collapse" data-bs-parent="#iclr21_group">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Image and video synthesis are closely related areas aiming at generating content from noise. While rapid progress has been demonstrated in improving image-based models to handle large resolutions, high-quality renderings, and wide variations in image content, achieving comparable video generation results remains problematic. We present a framework that leverages contemporary image generators to render high-resolution videos. We frame the video synthesis problem as discovering a trajectory in the latent space of a pre-trained and fixed image generator. Not only does such a framework render high-resolution videos, but it also is an order of magnitude more computationally efficient. We introduce a motion generator that discovers the desired trajectory, in which content and motion are disentangled. With such a representation, our framework allows for a broad range of applications, including content and motion manipulation. Furthermore, we introduce a new task, which we call cross-domain video synthesis, in which the image and motion generators are trained on disjoint datasets belonging to different domains. This allows for generating moving objects for which the desired video data is not available. Extensive experiments on various datasets demonstrate the advantages of our methods over existing video generation techniques.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">ICCV</p><img src="assets/img/conference/AdaTransform.jpeg">
                                 </div>
                             </div>
                         </div>
@@ -455,71 +395,59 @@
                 <div id="scalable_learning" class="block-content" style="padding-right: 10px;padding-left: 10px;">
                     <div class="col">
                         <h1 style="font-size: calc(15pt + 0.7vw);text-align: center;margin-bottom: 20px;">Multimodal Learning with Missing Modality</h1>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Are multimodal transformers robust to missing modality?</strong><br></h3>
-                                                <div class="info" style="font-size: calc(8pt + 0.5vw);"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'22<strong>]</strong></span>&nbsp;Mengmeng Ma, Jian Ren, Long Zhao, Davide Testuggine, and Xi Peng.</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2022. (acceptance rate 25.3%) </p>
-                                                <div id="cvpr22meng_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Ma_Are_Multimodal_Transformers_Robust_to_Missing_Modality_CVPR_2022_paper.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://drive.google.com/file/d/1yZMkuZXEfk_OvPoVI6Ut1e_4MyTm1oLL/view?usp=sharing" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr22mengabs-2" aria-expanded="false" aria-controls="cvpr22mengabs-2">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr22meng-2" aria-expanded="false" aria-controls="cvpr22meng-2">BibTeX</button>
-                                                    <div id="cvpr22meng-2" class="collapse" data-bs-parent="#cvpr22meng_group-2">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{ma2022multimodal,<br>&nbsp;title={Are Multimodal Transformers Robust to Missing Modality?},<br>&nbsp;author={Ma, Mengmeng and Ren, Jian and Zhao, Long and Testuggine, Davide and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>&nbsp;pages={18177--18186},<br>&nbsp;year={2022}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="cvpr22mengabs-2" class="collapse" data-bs-parent="#cvpr22meng_group-2">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Multimodal data collected from the real world are often imperfect due to missing modalities. Therefore multimodal models that are robust against modal-incomplete data are highly preferred. Recently, Transformer models have shown great success in processing multimodal data. However, existing work has been limited to either architecture designs or pre-training strategies; whether Transformer models are naturally robust against missing-modal data has rarely been investigated. In this paper, we present the firstof-its-kind work to comprehensively investigate the behavior of Transformers in the presence of modal-incomplete data. Unsurprising, we find Transformer models are sensitive to missing modalities while different modal fusion strategies will significantly affect the robustness. What surprised us is that the optimal fusion strategy is dataset dependent even for the same Transformer model; there does not exist a universal strategy that works in general cases. Based on these findings, we propose a principle method to improve the robustness of Transformer models by automatically searching for an optimal fusion strategy regarding input data. Experimental validations on three benchmarks support the superior performance of the proposed method.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 70px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>Are multimodal transformers robust to missing modality?</strong><br></h3>
+                                    <div class="info" style="font-size: calc(8pt + 0.5vw);"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[CVPR'22<strong>]</strong></span>&nbsp;Mengmeng Ma, Jian Ren, Long Zhao, Davide Testuggine, and Xi Peng.</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2022. (acceptance rate 25.3%) </p>
+                                    <div id="cvpr22meng_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://openaccess.thecvf.com/content/CVPR2022/papers/Ma_Are_Multimodal_Transformers_Robust_to_Missing_Modality_CVPR_2022_paper.pdf" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://drive.google.com/file/d/1yZMkuZXEfk_OvPoVI6Ut1e_4MyTm1oLL/view?usp=sharing" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr22mengabs-2" aria-expanded="false" aria-controls="cvpr22mengabs-2">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#cvpr22meng-2" aria-expanded="false" aria-controls="cvpr22meng-2">BibTeX</button>
+                                        <div id="cvpr22meng-2" class="collapse" data-bs-parent="#cvpr22meng_group-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{ma2022multimodal,<br>&nbsp;title={Are Multimodal Transformers Robust to Missing Modality?},<br>&nbsp;author={Ma, Mengmeng and Ren, Jian and Zhao, Long and Testuggine, Davide and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>&nbsp;pages={18177--18186},<br>&nbsp;year={2022}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">CVPR</p><div class="iframe-container"><iframe width="352" height="198" src="https://drive.google.com/file/d/1yZMkuZXEfk_OvPoVI6Ut1e_4MyTm1oLL/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="cvpr22mengabs-2" class="collapse" data-bs-parent="#cvpr22meng_group-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">Multimodal data collected from the real world are often imperfect due to missing modalities. Therefore multimodal models that are robust against modal-incomplete data are highly preferred. Recently, Transformer models have shown great success in processing multimodal data. However, existing work has been limited to either architecture designs or pre-training strategies; whether Transformer models are naturally robust against missing-modal data has rarely been investigated. In this paper, we present the firstof-its-kind work to comprehensively investigate the behavior of Transformers in the presence of modal-incomplete data. Unsurprising, we find Transformer models are sensitive to missing modalities while different modal fusion strategies will significantly affect the robustness. What surprised us is that the optimal fusion strategy is dataset dependent even for the same Transformer model; there does not exist a universal strategy that works in general cases. Based on these findings, we propose a principle method to improve the robustness of Transformer models by automatically searching for an optimal fusion strategy regarding input data. Experimental validations on three benchmarks support the superior performance of the proposed method.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">CVPR</p><div class="iframe-container"><iframe width="352" height="198" src="https://drive.google.com/file/d/1yZMkuZXEfk_OvPoVI6Ut1e_4MyTm1oLL/preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <div class="block-content" style="padding-right: 20px;padding-left: 20px;">
-                                    <div class="clean-blog-post" style="padding-bottom: 0px;">
-                                        <div class="row">
-                                            <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
-                                                <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>SMIL: Multimodal Learning with Severely Missing Modality</strong><br></h3>
-                                                <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[AAAI'21]</span>&nbsp;Mengmeng Ma, Jian Ren, Long Zhao,&nbsp;Sergey Tulyakov, Cathy Wu, Xi Peng.&nbsp;</span></div>
-                                                <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In&nbsp;Proceedings of the Association for the Advancement of Artificial Intelligence, 2021. (acceptance rate 21%) </p>
-                                                <div id="aaai21_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2103.05677" style="margin-right: 25px;margin-left: 0px;width: 95px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=1_yRw_W8KTc" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#aaai21abs-2" aria-expanded="false" aria-controls="aaai21abs-2">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#aaai21-2" aria-expanded="false" aria-controls="aaai21-2">BibTeX</button>
-                                                    <div id="aaai21-2" class="collapse" data-bs-parent="#aaai21_group-2">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{ma2021smil,<br>&nbsp;title={SMIL: Multimodal learning with severely missing modality},<br>&nbsp;author={Ma, Mengmeng and Ren, Jian and Zhao, Long and Tulyakov, Sergey and Wu, Cathy and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},<br>&nbsp;volume={35},<br>&nbsp;number={3},<br>&nbsp;pages={2302--2310},<br>&nbsp;year={2021}<br>}</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div id="aaai21abs-2" class="collapse" data-bs-parent="#aaai21_group-2">
-                                                        <div class="card">
-                                                            <div class="card-body">
-                                                                <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">A common assumption in multimodal learning is the completeness of training data, i.e. full modalities are available in all training examples. Although there exists research endeavor in developing novel methods to tackle the incompleteness of testing data, e.g., modalities are partially missing in testing examples, few of them can handle incomplete training modalities. The problem becomes even more challenging if considering the case of severely missing, e.g., 90% training examples may have incomplete modalities. For the first time in the literature, this paper formally studies multimodal learning with missing modality in terms of flexibility (missing modalities in training, testing, or both) and efficiency (most training data have incomplete modality). Technically, we propose a new method named SMIL that leverages Bayesian meta-learning in uniformly achieving both objectives. To validate our idea, we conduct a series of experiments on three popular benchmarks: MM-IMDb, CMUMOSI, and avMNIST. The results prove the state-of-the-art performance of SMIL over existing methods and generative baselines including autoencoders and generative adversarial networks.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                        <div class="clean-blog-post" style="padding-bottom: 0px;">
+                            <div class="row">
+                                <div class="col-lg-7 col-xxl-8" style="margin-bottom: 10px;">
+                                    <h3 style="font-family: Adamina, serif;font-size: calc(18px + 0.2vw);"><strong>SMIL: Multimodal Learning with Severely Missing Modality</strong><br></h3>
+                                    <div class="info"><span style="font-size: calc(14px + 0.2vw);font-family: 'Times New Roman Cyr';"><span style="font-weight: bold;font-family: Montserrat, sans-serif;">[AAAI'21]</span>&nbsp;Mengmeng Ma, Jian Ren, Long Zhao,&nbsp;Sergey Tulyakov, Cathy Wu, Xi Peng.&nbsp;</span></div>
+                                    <p style="font-size: calc(12px + 0.2vw);color: var(--bs-gray-600);">In&nbsp;Proceedings of the Association for the Advancement of Artificial Intelligence, 2021. (acceptance rate 21%) </p>
+                                    <div id="aaai21_group-2" class="container" style="padding-left: 0px;"><a class="btn btn-outline-primary" role="button" href="https://arxiv.org/pdf/2103.05677" style="margin-right: 25px;margin-left: 0px;width: 95px;" target="_blank">Paper</a><a class="btn btn-outline-primary" role="button" href="https://www.youtube.com/watch?v=1_yRw_W8KTc" style="margin-right: 25px;width: 95px;margin-left: 0px;" target="_blank">Video</a><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#aaai21abs-2" aria-expanded="false" aria-controls="aaai21abs-2">Abstract</button><button class="btn btn-outline-primary" type="button" style="margin-right: 25px;width: 95px;margin-left: 0px;" data-bs-toggle="collapse" data-bs-target="#aaai21-2" aria-expanded="false" aria-controls="aaai21-2">BibTeX</button>
+                                        <div id="aaai21-2" class="collapse" data-bs-parent="#aaai21_group-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;">@inproceedings{ma2021smil,<br>&nbsp;title={SMIL: Multimodal learning with severely missing modality},<br>&nbsp;author={Ma, Mengmeng and Ren, Jian and Zhao, Long and Tulyakov, Sergey and Wu, Cathy and Peng, Xi},<br>&nbsp;booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},<br>&nbsp;volume={35},<br>&nbsp;number={3},<br>&nbsp;pages={2302--2310},<br>&nbsp;year={2021}<br>}</p>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-5 col-xxl-4">
-                                                <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">AAAI</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/75P535ob5-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                        </div>
+                                        <div id="aaai21abs-2" class="collapse" data-bs-parent="#aaai21_group-2">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p class="text-secondary" style="font-size: 12px;font-family: Montserrat, sans-serif;margin-bottom: 0px;text-align: justify;">A common assumption in multimodal learning is the completeness of training data, i.e. full modalities are available in all training examples. Although there exists research endeavor in developing novel methods to tackle the incompleteness of testing data, e.g., modalities are partially missing in testing examples, few of them can handle incomplete training modalities. The problem becomes even more challenging if considering the case of severely missing, e.g., 90% training examples may have incomplete modalities. For the first time in the literature, this paper formally studies multimodal learning with missing modality in terms of flexibility (missing modalities in training, testing, or both) and efficiency (most training data have incomplete modality). Technically, we propose a new method named SMIL that leverages Bayesian meta-learning in uniformly achieving both objectives. To validate our idea, we conduct a series of experiments on three popular benchmarks: MM-IMDb, CMUMOSI, and avMNIST. The results prove the state-of-the-art performance of SMIL over existing methods and generative baselines including autoencoders and generative adversarial networks.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-lg-5 col-xxl-4">
+                                    <p style="text-align: center;font-weight: bold;background: rgb(0,63,157);color: var(--bs-white);z-index: 9999;width: calc(80px + 1.5vw);margin-bottom: 0px;padding-top: 0px;margin-top: 10px;position: absolute;margin-left: -25px;font-size: calc(14px + 0.5vw);">AAAI</p><div class="iframe-container"><iframe width="352" height="198" src="https://www.youtube.com/embed/75P535ob5-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                                 </div>
                             </div>
                         </div>
