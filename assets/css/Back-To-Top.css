@@ -18,3 +18,8 @@
   background-color: #555;
 }
 
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
