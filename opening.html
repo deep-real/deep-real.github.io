@@ -108,6 +108,12 @@
       font-size:0.9rem;
       overflow-x: auto;
     }
+
+    #visitor-wrapper > * {
+      transform: scale(0.8);
+      transform-origin: top left;
+    }
+
   </style>
 </head>
 <body>
@@ -260,10 +266,13 @@ https://github.com/xxxx
     </section>
 
     <footer>
-      <span>
-<script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=tt&d=jJ2EHElKmFTUiPPcNs9akd4NWOB5Fkx3kEXJebP6gsI'></script>
-
-      </span>
+  <div id="visitor-wrapper" style="width:400px; height:auto; overflow:hidden;">
+    <script
+      type="text/javascript"
+      id="mapmyvisitors"
+      src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=tt&d=jJ2EHElKmFTUiPPcNs9akd4NWOB5Fkx3kEXJebP6gsI">
+    </script>
+  </div>
     </footer>
   </div>
 </body>
