@@ -5,26 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SeafloorAI</title>
-  <link rel="stylesheet" href="assets/css/seafloor.css">
+  <link rel="stylesheet" href="assets/css/seafloor/img/css/seafloor.css">
 </head>
 
 <body>
   <header class="banner">
-    <img src="assets/img/logo.png" alt="SeafloorAI Logo" class="logo">
-    <img src="assets/img/stetson-north-800.jpg" alt="SeafloorAI Banner" style="height: 600px;">
+    <img src="assets/css/seafloor/img/css/seafloor/img/logo.png" alt="SeafloorAI Logo" class="logo">
+    <img src="assets/css/seafloor/img/stetson-north-800.jpg" alt="SeafloorAI Banner" style="height: 500px;">
     <div class="header-text container">
       <h1>SeafloorAI:</h1>
       <p class="subtitle">A Large-scale Vision-Language Dataset and Model for Seafloor Geological Survey</p>
       <p class="authors">PI: <a href="https://deep-real.github.io/dr_xipeng.html">Dr. Xi Peng,</a> Associate Professor, Department of Computer and Information Sciences, University of Delaware </p>
       <p class="authors">Co-PI: <a href="https://www.udel.edu/academics/colleges/ceoe/departments/smsp/faculty/arthur-trembanis/">Dr. Arthur Trembanis,</a> Professor, School of Marine Science and Policy, University of Delaware </p>
-      <p class="project">Project: "Advancing Trustworthy AI in Seafloor Mapping," DoD DEPSCoR (FA95502310494), PI: Xi Peng, 2023-2026.</p>
+      <p class="project">Project: "Advancing Trustworthy AI in Seafloor Mapping," DoD DEPSCoR Award (FA95502310494), 2023-2026; PI: Xi Peng, Co-PI: Arthur Trembanis.</p>
       <p class="publication">Publication: <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/274de7d60333c0848f42e18ae97f13e3-Paper-Datasets_and_Benchmarks_Track.pdf">SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey.</a> In NeurIPS Datasets and Benchmarks Track, 2024.</p>
     </div>
   </header>
   <div class="button-group">
-    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/274de7d60333c0848f42e18ae97f13e3-Paper-Datasets_and_Benchmarks_Track.pdf" class="btn btn-paper">📄 Paper</a>
-    <a href="https://huggingface.co/datasets/deeprealaiml/SeafloorAI" class="btn btn-download">⬇️ Dataset</a>
-    <a href="https://github.com/Nyquixt/SeafloorAI" class="btn btn-github">🔗 GitHub</a>
+    <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/274de7d60333c0848f42e18ae97f13e3-Paper-Datasets_and_Benchmarks_Track.pdf" class="btn btn-paper">📄 Paper (NeurIPS 2024)</a>
+    <a href="https://huggingface.co/datasets/deeprealaiml/SeafloorAI" class="btn btn-download">⬇️ Dataset (Hugging Face)</a>
+    <a href="https://github.com/Nyquixt/SeafloorAI" class="btn btn-github">🔗 Code (GitHub)</a>
   </div>
   <main class="container">
     <section id="abstract">
@@ -56,7 +56,7 @@
           </p>
         </div>
         <figure>
-          <img src="assets/img/towship.jpg" alt="Seafloor mapping system">
+          <img src="assets/css/seafloor/img/towship.jpg" alt="Seafloor mapping system">
           <figcaption>Tow ship and AUV recording the seafloor details. Photo courtesy from Nautilus Magazine.
           </figcaption>
         </figure>
@@ -79,7 +79,7 @@
         extensive AI-ready sonar imagery dataset for seafloor mapping. We also incorporate language into our dataset,
         extending it to SeafloorGenAI.</p>
       <figure>
-        <img src="assets/img/title.png" alt="SeafloorAI public survey regions" style="width: 90%; display: block; margin: 0 auto;">
+        <img src="assets/css/seafloor/img/title.png" alt="SeafloorAI public survey regions" style="width: 90%; display: block; margin: 0 auto;">
         <figcaption class="caption">Overview of our datasets, SeafloorAI and SeafloorGenAI. The table highlights key
           dataset statistics. We incorporate 62 public data surveys published by USGS and NOAA from 9 major regions to
           construct SeafloorAI and SeafloorGenAI datasets. Our dataset contains 9 geological layers, 4 of which are raw
@@ -90,20 +90,65 @@
       </figure>
     </section>
     <section id="seafloorai-dataset">
-      <div class="section-with-image">
-        <div class="text">
-          <h2>SeafloorAI Dataset</h2>
-          <!-- <p>The dataset contains 827K ground-truth segmentation masks for 696K sonar images across 5 geological layers.
-            The spatial dimension is 224 x 224 for each sonar image. However, the users are free to re-patchify the
-            raster map provided below and create their own versions of the dataset. With that said, we also provide data
-            processing code on our GitHub. We include an sample collected from Region 5.</p> -->
-            <p>The dataset contains 827K ground-truth segmentation masks for 696K sonar images across 5 geological layers.
-            The spatial dimension is 224 x 224 for each sonar image. The figure on the right visualizes a sample from Region 5. To download the 
-            full dataset, please visit our <a href="https://huggingface.co/datasets/SeafloorAI">HuggingFace</a> page.</p>
+      <h2>SeafloorAI Dataset</h2>
+      <p>SeafloorAI dataset provides 827K ground-truth segmentation masks for 696K sonar image tiles across 9 regions. It includes 9 geospatial data layers: 4 raw input signals, namely Backscatter, Bathymetry, Slope, and Rugosity, and 5 expert-annotated label layers, including Sediment, Physiographic Zone, Habitat, Fault, and Fold.
+         Each sonar image tile has a spatial resolution of 224 × 224 pixels. To download the full dataset, please visit our <a href="https://huggingface.co/datasets/SeafloorAI">Hugging Face</a> page.</p>
+      <div class="carousel-container" id="carousel-seafloorai">
+        <div class="carousel">
+          <div class="carousel-slide active">
+            <figure>
+              <img src="assets/css/seafloor/img/region1.png" alt="Region 1">
+              <figcaption>Region 1</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/css/seafloor/img/region2.png" alt="Region 2">
+              <figcaption>Region 2</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/css/seafloor/img/region3.png" alt="Region 3">
+              <figcaption>Region 3</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/css/seafloor/img/region4.png" alt="Region 4">
+              <figcaption>Region 4</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/css/seafloor/img/region5.png" alt="Region 5">
+              <figcaption>Region 5</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/css/seafloor/img/region6.png" alt="Region 6">
+              <figcaption>Region 6</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/css/seafloor/img/region7.png" alt="Region 7">
+              <figcaption>Region 7</figcaption>
+            </figure>
+          </div>
         </div>
-        <figure>
-          <img src="assets/img/regions.png" alt="Regions">
-        </figure>
+        <button class="carousel-btn prev" onclick="changeSlide('carousel-seafloorai', -1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide('carousel-seafloorai', 1)">❯</button>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide('carousel-seafloorai', 0)"></span>
+          <span class="dot" onclick="currentSlide('carousel-seafloorai', 1)"></span>
+          <span class="dot" onclick="currentSlide('carousel-seafloorai', 2)"></span>
+          <span class="dot" onclick="currentSlide('carousel-seafloorai', 3)"></span>
+          <span class="dot" onclick="currentSlide('carousel-seafloorai', 4)"></span>
+          <span class="dot" onclick="currentSlide('carousel-seafloorai', 5)"></span>
+          <span class="dot" onclick="currentSlide('carousel-seafloorai', 6)"></span>
+        </div>
       </div>
     </section>
     <section id="genai-dataset">
@@ -111,33 +156,33 @@
       <p>SeafloorGenAI extends SeafloorAI with the incorporation of the language component. We aim to equip each sonar
         image with a detailed language description as well as several question-answer pairs. The ultimate goal is to
         develop a large vision-language model for marine science. SeafloorGenAI dataset is <em>coming soon.</em></p>
-      <div class="carousel-container">
+      <div class="carousel-container" id="carousel-genai">
         <div class="carousel">
           <div class="carousel-slide active">
             <figure>
-              <img src="assets/img/demo.png" alt="Backscatter">
-              <figcaption>Backscatter</figcaption>
+              <img src="assets/css/seafloor/img/demo.png" alt="Sample 1">
+              <figcaption>Sample 1</figcaption>
             </figure>
           </div>
           <div class="carousel-slide">
             <figure>
-              <img src="assets/img/demo2.png" alt="Bathymetry">
-              <figcaption>Bathymetry</figcaption>
+              <img src="assets/css/seafloor/img/demo2.png" alt="Sample 2">
+              <figcaption>Sample 2</figcaption>
             </figure>
           </div>
           <div class="carousel-slide">
             <figure>
-              <img src="assets/img/demo3.png" alt="Sidescan">
-              <figcaption>Sidescan</figcaption>
+              <img src="assets/css/seafloor/img/demo3.png" alt="Sample 3">
+              <figcaption>Sample 3</figcaption>
             </figure>
           </div>
         </div>
-        <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
-        <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+        <button class="carousel-btn prev" onclick="changeSlide('carousel-genai', -1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide('carousel-genai', 1)">❯</button>
         <div class="carousel-dots">
-          <span class="dot active" onclick="currentSlide(0)"></span>
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot active" onclick="currentSlide('carousel-genai', 0)"></span>
+          <span class="dot" onclick="currentSlide('carousel-genai', 1)"></span>
+          <span class="dot" onclick="currentSlide('carousel-genai', 2)"></span>
         </div>
       </div>
     </section>
@@ -162,7 +207,7 @@
         carefully evaluate the generated language annotations to ensure quality and consistency. The last two steps form
         a feedback loop, creating an iterative prompt refinement process.</p>
       <figure>
-        <img src="assets/img/vlm.png" alt="Annotation pipeline" style="width: 90%; display: block; margin: 0 auto;">
+        <img src="assets/css/seafloor/img/vlm.png" alt="Annotation pipeline" style="width: 90%; display: block; margin: 0 auto;">
       </figure>
     </section>
     
@@ -180,7 +225,7 @@
       </ul>
       <h3>Open-Sourced Data</h3>
       <ul class="publication-list">
-        <li><strong>SeafloorAI Dataset:</strong> It includes 696,000 sonar images, 827,000 annotated segmentation masks, 696,000 detailed language descriptions and approximately 7M question-answer pairs. We make SeafloorAI dataset publicly available: [<a href="https://huggingface.co/datasets/deeprealaiml/SeafloorAI">HuggingFace Dataset</a>]</li>
+        <li><strong>SeafloorAI Dataset:</strong> It includes 696,000 sonar images, 827,000 annotated segmentation masks, 696,000 detailed language descriptions and approximately 7M question-answer pairs. We make SeafloorAI dataset publicly available: [<a href="https://huggingface.co/datasets/deeprealaiml/SeafloorAI">Hugging Face Dataset</a>]</li>
         <li><strong>Prediction Rationale Dataset for ImageNet:</strong> We construct a new rationale dataset that covers all 1,000 categories in the ImageNet. For each category, we generate an ontology tree with a maximum height of two. Combining attributes and sub-attributes, this dataset contains over 4,000 unique rationales. [<a href="https://github.com/deep-real/DCP/tree/main/Rationale%20Dataset">Github Repo</a>]</li>
       </ul>
       <h3>Open-Sourced Software</h3>
@@ -197,58 +242,50 @@
       <p>We also acknowledge the U.S. Geological Survey (USGS) and the National Oceanic and Atmospheric Administration (NOAA) for providing the raw survey data.</p>  
     </section>
     <div class="sponsors-grid">
-        <img src="assets/img/dod.png" alt="Department of Defense" class="sponsor-logo">
-        <img src="assets/img/nsf.png" alt="NSF" class="sponsor-logo">
-        <img src="assets/img/usgs.png" alt="USGS" class="sponsor-logo">
-        <img src="assets/img/noaa.png" alt="NOAA" class="sponsor-logo">
+        <img src="assets/css/seafloor/img/dod.png" alt="Department of Defense" class="sponsor-logo">
+        <img src="assets/css/seafloor/img/nsf.png" alt="NSF" class="sponsor-logo">
+        <img src="assets/css/seafloor/img/usgs.png" alt="USGS" class="sponsor-logo">
+        <img src="assets/css/seafloor/img/noaa.png" alt="NOAA" class="sponsor-logo">
       </div>
   </main>
   <footer>
     <p>DeepREAL &copy; 2024 All Rights Reserved</p>
   </footer>
   <script>
-    let currentSlideIndex = 0;
+    const carouselStates = {};
 
-    function showSlide(index) {
-      const slides = document.querySelectorAll('.carousel-slide');
-      const dots = document.querySelectorAll('.dot');
-      const prevBtn = document.querySelector('.carousel-btn.prev');
-      const nextBtn = document.querySelector('.carousel-btn.next');
-      
-      if (index >= slides.length) currentSlideIndex = 0;
-      if (index < 0) currentSlideIndex = slides.length - 1;
-      
+    function showSlide(carouselId, index) {
+      const container = document.getElementById(carouselId);
+      const slides = container.querySelectorAll('.carousel-slide');
+      const dots = container.querySelectorAll('.dot');
+      const prevBtn = container.querySelector('.carousel-btn.prev');
+      const nextBtn = container.querySelector('.carousel-btn.next');
+
+      if (index >= slides.length) index = 0;
+      if (index < 0) index = slides.length - 1;
+      carouselStates[carouselId] = index;
+
       slides.forEach(slide => slide.classList.remove('active'));
       dots.forEach(dot => dot.classList.remove('active'));
-      
-      slides[currentSlideIndex].classList.add('active');
-      dots[currentSlideIndex].classList.add('active');
-      
-      if (currentSlideIndex === 0) {
-        prevBtn.classList.add('hidden');
-      } else {
-        prevBtn.classList.remove('hidden');
-      }
-      
-      if (currentSlideIndex === slides.length - 1) {
-        nextBtn.classList.add('hidden');
-      } else {
-        nextBtn.classList.remove('hidden');
-      }
+
+      slides[index].classList.add('active');
+      dots[index].classList.add('active');
+
+      prevBtn.classList.toggle('hidden', index === 0);
+      nextBtn.classList.toggle('hidden', index === slides.length - 1);
     }
 
-    function changeSlide(direction) {
-      currentSlideIndex += direction;
-      showSlide(currentSlideIndex);
+    function changeSlide(carouselId, direction) {
+      const current = carouselStates[carouselId] || 0;
+      showSlide(carouselId, current + direction);
     }
 
-    function currentSlide(index) {
-      currentSlideIndex = index;
-      showSlide(currentSlideIndex);
+    function currentSlide(carouselId, index) {
+      showSlide(carouselId, index);
     }
-    
 
-    showSlide(0);
+    showSlide('carousel-seafloorai', 0);
+    showSlide('carousel-genai', 0);
   </script>
 </body>
 
