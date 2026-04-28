@@ -55,24 +55,24 @@ header.banner .header-text {
   max-width: 1600px;
 }
 header.banner h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 0;
 }
 header.banner .subtitle {
-  font-size: 4em;
+  font-size: 3.5em;
   margin: 20px 0;
   font-weight: normal;
 }
 header.banner .authors {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 8px 0 0 0;
 }
 header.banner .project {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 8px 0 0 0;
 }
 header.banner .publication {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 8px 0 0 0;
 }
 header.banner .logo {
