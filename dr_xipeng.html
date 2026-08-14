@@ -52,6 +52,61 @@
             color: inherit;
             text-decoration: underline;
         }
+
+        .profile-row {
+            align-items: stretch;
+        }
+
+        .profile-media,
+        .profile-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-media {
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 20px 4%;
+            width: 25%;
+            min-width: 200px;
+        }
+
+        .profile-photo {
+            display: block;
+            width: min(100%, 230px);
+            height: auto;
+        }
+
+        .profile-socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .profile-details {
+            justify-content: center;
+            width: 75%;
+            padding: 20px;
+            text-align: left;
+        }
+
+        @media (max-width: 991.98px) {
+            .profile-media,
+            .profile-details {
+                width: 100%;
+            }
+
+            .profile-details {
+                align-items: center;
+                padding-top: 8px;
+            }
+
+            .profile-details .text {
+                width: min(100%, 520px);
+            }
+        }
     </style>
 </head>
 
@@ -78,9 +133,25 @@
         <section data-bss-parallax-bg="true" style="margin-top: 0px;background: url(&quot;assets/img/uva_3.jpg&quot;) top / cover no-repeat;">
             <div style="background: rgba(0,0,0,0.45);">
                 <div class="container" style="padding-top: 20px;padding-bottom: 40px;max-width: 1200px;">
-                    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 row-cols-xxl-2 justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center">
-                        <div class="col text-center justify-content-center align-content-center" style="padding: 4%;width: 25%;min-width: 200px;padding-top: 2%;padding-right: 4%;padding-bottom: 2%;padding-left: 4%;"><img class="rounded" src="assets/img/xipeng/peng-headshot.jpg"></div>
-                        <div class="col justify-content-center align-content-center" style="text-align: center;width: 900px;padding: 20px;">
+                    <div class="row row-cols-1 row-cols-lg-2 justify-content-center profile-row">
+                        <div class="col profile-media">
+                            <img class="rounded profile-photo" src="assets/img/xipeng/peng-headshot.jpg" alt="Portrait of Dr. Xi Peng">
+                            <div class="profile-socials">
+                                <a href="https://scholar.google.com/citations?user=DWw4v0kAAAAJ" target="_blank" class="text-white text-decoration-none" aria-label="Google Scholar">
+                                    <i class="ai ai-google-scholar-square ai-2x"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/deepreal/" target="_blank" class="text-white text-decoration-none" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="https://github.com/deep-real" target="_blank" class="text-white text-decoration-none" aria-label="GitHub">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@DeepREALab" target="_blank" class="text-white text-decoration-none" aria-label="YouTube">
+                                    <i class="fab fa-youtube fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col profile-details">
                             <div class="text" style="color: #000000;">
                                 <h2 style="text-align: left;font-family: Montserrat, sans-serif;font-size: 28px;margin-top: 0px;margin-bottom: 20px;color: var(--bs-white);">Dr. Xi Peng,&nbsp;<span style="font-size: 23px;">彭曦</span></h2>
                                 <p style="font-size: 17px;text-align: left;color: var(--bs-white);margin-bottom: 0;">Associate Professor, Copenhaver Fellow</p>
@@ -90,28 +161,6 @@
                                 <p style="font-size: 17px;text-align: left;color: var(--bs-white);margin-bottom: 14px;">MSK Cancer Center</p>
                                 <p style="font-size: 17px;text-align: left;color: var(--bs-white);margin-bottom: 0;"><strong>Email:</strong> <a href="mailto:naq5rd@virginia.edu" style="color: var(--bs-white);">naq5rd AT virginia DOT edu</a></p>
                                 <p style="font-size: 17px;text-align: left;color: var(--bs-white);margin-bottom: 18px;"><strong>Office:</strong> Rice Hall 310</p>
-                                <div class="row justify-content-left align-items-center g-4">
-                                    <div class="col-auto">
-                                        <a href="https://scholar.google.com/citations?user=DWw4v0kAAAAJ" target="_blank" class="text-white text-decoration-none">
-                                            <i class="ai ai-google-scholar-square ai-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="https://www.linkedin.com/company/deepreal/" target="_blank" class="text-white text-decoration-none">
-                                            <i class="fab fa-linkedin fa-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="https://github.com/deep-real" target="_blank" class="text-white text-decoration-none">
-                                            <i class="fab fa-github fa-2x"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-auto">
-                                        <a href="https://www.youtube.com/@DeepREALab" target="_blank" class="text-white text-decoration-none">
-                                            <i class="fab fa-youtube fa-2x"></i>
-                                        </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
