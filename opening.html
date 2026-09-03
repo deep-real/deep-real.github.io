@@ -46,21 +46,310 @@
     <link rel="stylesheet" href="assets/css/WOWSlider-about-us-2.css">
     <link rel="stylesheet" href="assets/css/WOWSlider-about-us.css">
     <style>
+        :root {
+            --deepreal-navy: #0b1f3a;
+            --deepreal-blue: #173f73;
+            --deepreal-orange: #e57200;
+            --deepreal-orange-dark: #bd5d00;
+            --deepreal-ink: #172033;
+            --deepreal-muted: #5e6878;
+            --deepreal-line: #dce3ec;
+            --deepreal-bg: #f4f7fb;
+        }
+
         body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
-            background-color: var(--bs-tertiary-bg);
+            background-color: var(--deepreal-bg);
+            color: var(--deepreal-ink);
         }
 
         main {
             flex: 1;
-            background-color: var(--bs-tertiary-bg);
+            background-color: var(--deepreal-bg);
         }
 
-        main .clean-block,
-        main .block-content {
-            background-color: var(--bs-tertiary-bg);
+        .opportunities-section {
+            padding: 132px 0 72px;
+            background:
+                radial-gradient(circle at 88% 2%, rgba(229, 114, 0, .13), transparent 30%),
+                linear-gradient(180deg, #ffffff 0%, var(--deepreal-bg) 100%);
+        }
+
+        .opening-hero {
+            max-width: 820px;
+            margin-bottom: 34px;
+        }
+
+        .section-eyebrow,
+        .card-eyebrow {
+            margin-bottom: 10px;
+            color: var(--deepreal-orange-dark);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+        }
+
+        .opening-hero h1,
+        .rankings-heading h2 {
+            margin-bottom: 16px;
+            color: var(--deepreal-navy);
+            font-size: clamp(36px, 5vw, 62px);
+            font-weight: 700;
+            letter-spacing: -.035em;
+            line-height: 1.05;
+        }
+
+        .opening-hero .lead,
+        .rankings-heading .lead {
+            margin-bottom: 0;
+            color: var(--deepreal-muted);
+            font-size: 17px;
+            line-height: 1.75;
+        }
+
+        .application-note {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 8px 22px;
+            margin-top: 22px;
+            padding: 12px 16px;
+            border: 1px solid #f0d2b5;
+            border-radius: 10px;
+            background: #fff8f1;
+            color: #70421e;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .opportunity-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .opportunity-card {
+            display: flex;
+            min-height: 285px;
+            flex-direction: column;
+            padding: 28px;
+            border: 1px solid var(--deepreal-line);
+            border-radius: 16px;
+            background: #ffffff;
+            box-shadow: 0 18px 55px -42px rgba(11, 31, 58, .8);
+        }
+
+        .opportunity-card h2 {
+            margin-bottom: 12px;
+            color: var(--deepreal-navy);
+            font-size: 23px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .opportunity-card p {
+            margin-bottom: 22px;
+            color: var(--deepreal-muted);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .opportunity-card .btn {
+            align-self: flex-start;
+            margin-top: auto;
+            padding: 10px 17px;
+            border-color: var(--deepreal-orange);
+            border-radius: 8px;
+            background: var(--deepreal-orange);
+            font-weight: 700;
+        }
+
+        .opportunity-card .btn:hover,
+        .opportunity-card .btn:focus {
+            border-color: var(--deepreal-orange-dark);
+            background: var(--deepreal-orange-dark);
+        }
+
+        .research-focus {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 30px;
+            margin-top: 22px;
+            padding: 25px 28px;
+            border-left: 4px solid var(--deepreal-orange);
+            border-radius: 0 14px 14px 0;
+            background: var(--deepreal-navy);
+            color: #ffffff;
+        }
+
+        .research-focus h2 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .research-focus-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .research-focus-list p {
+            margin: 0;
+            color: rgba(255, 255, 255, .78);
+            font-size: 13px;
+            line-height: 1.65;
+        }
+
+        .research-focus-list strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .rankings-section {
+            padding: 74px 0 90px;
+            background: #ffffff;
+        }
+
+        .rankings-heading {
+            display: grid;
+            grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+            align-items: end;
+            gap: 50px;
+            margin-bottom: 38px;
+        }
+
+        .rankings-heading h2 {
+            margin-bottom: 0;
+            font-size: clamp(34px, 4vw, 52px);
+        }
+
+        .rankings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            border-top: 1px solid var(--deepreal-line);
+            border-left: 1px solid var(--deepreal-line);
+        }
+
+        .ranking-card {
+            display: flex;
+            min-height: 270px;
+            flex-direction: column;
+            padding: 28px;
+            border-right: 1px solid var(--deepreal-line);
+            border-bottom: 1px solid var(--deepreal-line);
+            color: inherit;
+            text-decoration: none;
+            transition: background-color .2s ease, transform .2s ease;
+        }
+
+        .ranking-card:hover,
+        .ranking-card:focus {
+            z-index: 1;
+            background: #f8fafc;
+            color: inherit;
+            text-decoration: none;
+            transform: translateY(-2px);
+        }
+
+        .ranking-category {
+            min-height: 18px;
+            color: var(--deepreal-orange-dark);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+        }
+
+        .ranking-number {
+            margin: 14px 0 10px;
+            color: var(--deepreal-navy);
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 76px;
+            font-weight: 700;
+            letter-spacing: -.06em;
+            line-height: .95;
+        }
+
+        .ranking-number sup {
+            position: relative;
+            top: -.55em;
+            margin-right: 2px;
+            font-size: 22px;
+            letter-spacing: 0;
+        }
+
+        .ranking-label {
+            max-width: 260px;
+            margin-bottom: 20px;
+            color: var(--deepreal-ink);
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.35;
+        }
+
+        .ranking-source {
+            margin-top: auto;
+            color: var(--deepreal-muted);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .ranking-source span {
+            color: var(--deepreal-orange-dark);
+            font-weight: 700;
+        }
+
+        @media (max-width: 991.98px) {
+            .opportunity-grid,
+            .rankings-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .opportunity-card:last-child {
+                grid-column: 1 / -1;
+                min-height: 230px;
+            }
+
+            .research-focus,
+            .rankings-heading {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .opportunities-section {
+                padding: 105px 0 54px;
+            }
+
+            .rankings-section {
+                padding: 54px 0 70px;
+            }
+
+            .opportunity-grid,
+            .research-focus-list,
+            .rankings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .opportunity-card:last-child {
+                grid-column: auto;
+            }
+
+            .opportunity-card,
+            .ranking-card {
+                min-height: 0;
+                padding: 24px;
+            }
+
+            .ranking-number {
+                font-size: 64px;
+            }
         }
 
     </style>
@@ -85,57 +374,104 @@
             </div>
         </div>
     </nav>
-    <main class="page faq-page">
-        <section class="clean-block clean-faq dark" style="padding-bottom: 30px;">
-            <div class="block-heading" style="padding-top: 80px;padding-bottom: 0px;margin-bottom: 10px;">
-                <h2 class="text-info" style="margin-bottom: 0;">For Prospective Students</h2>
-            </div>
-            <div class="container" style="max-width: 1200px;padding-right: 5px;padding-left: 5px;padding-top: 0px;">
-                <div class="block-content" style="padding: 20px 10px 10px;">
-                    <div class="faq-item">
-                        <div class="answer">
-                            <p style="color: #000;margin-bottom: 10px;">I am looking for CS PhD students and postdoctoral researchers starting in Spring or Fall 2027.</p>
-                            <div class="d-flex flex-wrap" style="gap: 10px;margin-bottom: 18px;">
-                                <a class="btn btn-primary" href="https://deepreal-research-opportunities.peterpengrc.chatgpt.site/apply/phd" target="_blank" rel="noopener noreferrer">Apply for PhD</a>
-                                <a class="btn btn-primary" href="https://deepreal-research-opportunities.peterpengrc.chatgpt.site/apply/postdoc" target="_blank" rel="noopener noreferrer">Apply for Postdoc</a>
-                            </div>
-                            <p style="color: #000;margin-bottom: 10px;">UVA undergraduate and master students interested in trustworthy AI research are also welcome to apply.</p>
-                            <div style="margin-bottom: 18px;">
-                                <a class="btn btn-primary" href="https://deepreal-research-opportunities.peterpengrc.chatgpt.site/apply/student" target="_blank" rel="noopener noreferrer">Apply for Undergraduate / Master Research</a>
-                            </div>
-                            <p style="color: #555;font-size: 14px;">These short forms are for initial screening. No applicant account or login is required. Qualified applicants will be contacted about a possible interview.</p>
-                            <p style="color: #000;margin-bottom: 6px;">Research directions:</p>
-                            <ul style="color: #000;padding-left: 18px;margin-bottom: 0;">
-                                <li><strong>Trustworthy Machine Learning:</strong> Robust optimization, explainable machine learning, vision-language models, and world models</li>
-                                <li><strong>Trustworthy AI in the Real World:</strong> AI for health, science, and physical or autonomous systems</li>
-                            </ul>
-                        </div>
+    <main class="page opening-page">
+        <section class="opportunities-section">
+            <div class="container">
+                <header class="opening-hero">
+                    <p class="section-eyebrow">Research opportunities at UVA</p>
+                    <h1>Join DeepREALab</h1>
+                    <p class="lead">We are recruiting researchers interested in trustworthy machine learning and real-world AI. Choose the opportunity that fits you and submit a short application for initial screening.</p>
+                    <div class="application-note" aria-label="Application details">
+                        <span>No applicant account or login required</span>
+                        <span>Selected applicants will be contacted for an interview</span>
                     </div>
+                </header>
+
+                <div class="opportunity-grid">
+                    <article class="opportunity-card">
+                        <p class="card-eyebrow">Spring or Fall 2027</p>
+                        <h2>PhD Students</h2>
+                        <p>CS PhD opportunities for students who want to develop trustworthy AI methods or apply them to important real-world problems.</p>
+                        <a class="btn btn-primary" href="https://deepreal-research-opportunities.peterpengrc.chatgpt.site/apply/phd" target="_blank" rel="noopener noreferrer">Apply for PhD</a>
+                    </article>
+
+                    <article class="opportunity-card">
+                        <p class="card-eyebrow">Spring or Fall 2027</p>
+                        <h2>Postdoctoral Researchers</h2>
+                        <p>Postdoctoral opportunities for researchers completing or holding a PhD in computer science or a related field.</p>
+                        <a class="btn btn-primary" href="https://deepreal-research-opportunities.peterpengrc.chatgpt.site/apply/postdoc" target="_blank" rel="noopener noreferrer">Apply for Postdoc</a>
+                    </article>
+
+                    <article class="opportunity-card">
+                        <p class="card-eyebrow">Current UVA students</p>
+                        <h2>UVA Student Researchers</h2>
+                        <p>Research opportunities for UVA undergraduate and master’s students interested in gaining experience in trustworthy AI.</p>
+                        <a class="btn btn-primary" href="https://deepreal-research-opportunities.peterpengrc.chatgpt.site/apply/student" target="_blank" rel="noopener noreferrer">Apply for Student Research</a>
+                    </article>
                 </div>
+
+                <aside class="research-focus" aria-labelledby="research-focus-heading">
+                    <h2 id="research-focus-heading">Research focus</h2>
+                    <div class="research-focus-list">
+                        <p><strong>Trustworthy Machine Learning</strong>Robust optimization, explainable machine learning, vision-language models, and world models.</p>
+                        <p><strong>Trustworthy AI in the Real World</strong>AI for health, science, and physical systems.</p>
+                    </div>
+                </aside>
             </div>
         </section>
-        <section class="clean-block clean-faq dark" style="padding-top: 10px;padding-bottom: 70px;">
-            <div class="block-heading" style="padding-top: 15px;padding-bottom: 0;margin-bottom: 10px;">
-                <h2 class="text-info" style="margin-bottom: 0;">UVA Rankings</h2>
-            </div>
-            <div class="container" style="max-width: 1200px;padding-right: 5px;padding-left: 5px;padding-top: 0;">
-                <div class="block-content" style="padding: 20px 10px 10px;">
-                    <div class="faq-item">
-                        <div class="answer">
-                            <h3 style="color: #000;font-size: 20px;margin-bottom: 16px;">University of Virginia</h3>
-                            <ul>
-                                <li><strong>#26</strong> National Universities — <a href="https://news.virginia.edu/content/uva-ascends-no-2-best-value-among-public-universities-us-news-ranking" target="_blank">U.S. News &amp; World Report, 2026</a></li>
-                                <li><strong>#4</strong> Top Public Schools — <a href="https://www.virginia.edu/facts-figures/" target="_blank">U.S. News &amp; World Report, 2026</a></li>
-                                <li><strong>#166</strong> World University Rankings — <a href="https://www.timeshighereducation.com/world-university-rankings/university-virginia-main-campus" target="_blank">Times Higher Education, 2026</a></li>
-                            </ul>
-                            <h3 style="color: #000;font-size: 20px;margin-bottom: 16px;">UVA Computer Science</h3>
-                            <ul style="margin-bottom: 0;">
-                                <li><strong>#27</strong> in the U.S. for computer science research output across all areas — <a href="https://csrankings.org/" target="_blank">CSRankings, 2026</a></li>
-                                <li><strong>#32</strong> Best Colleges for Computer Science in America — <a href="https://www.niche.com/colleges/university-of-virginia/rankings/" target="_blank">Niche, 2026</a></li>
-                                <li><strong>#36</strong> Best Computer Science Graduate Programs — <a href="https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings" target="_blank">U.S. News &amp; World Report, 2025</a></li>
-                            </ul>
-                        </div>
+
+        <section class="rankings-section">
+            <div class="container">
+                <header class="rankings-heading">
+                    <div>
+                        <p class="section-eyebrow">University of Virginia</p>
+                        <h2>Why UVA</h2>
                     </div>
+                    <p class="lead">UVA combines the resources of a leading research university with one of the strongest public-university communities in the United States.</p>
+                </header>
+
+                <div class="rankings-grid" aria-label="Selected UVA rankings">
+                    <a class="ranking-card" href="https://news.virginia.edu/content/uva-ascends-no-2-best-value-among-public-universities-us-news-ranking" target="_blank" rel="noopener noreferrer">
+                        <span class="ranking-category">University</span>
+                        <span class="ranking-number"><sup>#</sup>26</span>
+                        <span class="ranking-label">National University</span>
+                        <span class="ranking-source"><span>U.S. News &amp; World Report</span><br>2026</span>
+                    </a>
+
+                    <a class="ranking-card" href="https://news.virginia.edu/content/uva-ascends-no-2-best-value-among-public-universities-us-news-ranking" target="_blank" rel="noopener noreferrer">
+                        <span class="ranking-category">University</span>
+                        <span class="ranking-number"><sup>#</sup>4</span>
+                        <span class="ranking-label">Public University in the United States</span>
+                        <span class="ranking-source"><span>U.S. News &amp; World Report</span><br>2026</span>
+                    </a>
+
+                    <a class="ranking-card" href="https://www.virginia.edu/facts-figures/" target="_blank" rel="noopener noreferrer">
+                        <span class="ranking-category">University</span>
+                        <span class="ranking-number"><sup>#</sup>2</span>
+                        <span class="ranking-label">Public School in the Nation</span>
+                        <span class="ranking-source"><span>Time</span><br>2026–27</span>
+                    </a>
+
+                    <a class="ranking-card" href="https://www.niche.com/colleges/university-of-virginia/rankings/" target="_blank" rel="noopener noreferrer">
+                        <span class="ranking-category">Computer Science</span>
+                        <span class="ranking-number"><sup>#</sup>26</span>
+                        <span class="ranking-label">Computer Science in America</span>
+                        <span class="ranking-source"><span>Niche</span><br>2027</span>
+                    </a>
+
+                    <a class="ranking-card" href="https://csrankings.org/" target="_blank" rel="noopener noreferrer">
+                        <span class="ranking-category">Computer Science</span>
+                        <span class="ranking-number"><sup>#</sup>27</span>
+                        <span class="ranking-label">U.S. Computer Science Research Output</span>
+                        <span class="ranking-source"><span>CSRankings</span><br>2016–2026, all areas</span>
+                    </a>
+
+                    <a class="ranking-card" href="https://www.usnews.com/best-graduate-schools/top-science-schools/computer-science-rankings" target="_blank" rel="noopener noreferrer">
+                        <span class="ranking-category">Computer Science</span>
+                        <span class="ranking-number"><sup>#</sup>36</span>
+                        <span class="ranking-label">Computer Science Graduate Programs</span>
+                        <span class="ranking-source"><span>U.S. News &amp; World Report</span><br>2025</span>
+                    </a>
                 </div>
             </div>
         </section>
