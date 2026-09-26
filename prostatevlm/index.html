@@ -7,13 +7,13 @@
   <meta name="description" content="Integrating radiologists’ insights for safer, more accurate AI-assisted prostate MRI interpretation through rationale data, ProstateVLM, and expert evaluation of predictions and explanations.">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="prostatevlm/styles.css">
-  <script src="prostatevlm/app.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="project-banner" id="top">
-  <img class="banner-image" src="prostatevlm/assets/mri-t2w.webp" alt="" width="402" height="398" fetchpriority="high">
+  <img class="banner-image" src="assets/mri-t2w.webp" alt="" width="402" height="398" fetchpriority="high">
   <div class="banner-content">
     <h1><span class="project-name">ProstateVLM</span><span class="project-title">Integrating radiologist insights for safe and accurate AI-assisted prostate MRI interpretation</span></h1>
     <p class="project-people">PI: <a href="https://engineering.virginia.edu/faculty/xi-peng" target="_blank" rel="noopener noreferrer">Xi Peng&#160;<svg class="external-link-icon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M15 3h6v6M21 3l-9 9M9 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-4"/></svg></a>, University of Virginia</p>
@@ -96,7 +96,7 @@
       <p>Our project brings this expertise into AI through two complementary forms of annotation: segmentation masks that mark regions in an image, and clinical rationales that explain the findings. We study the prostate gland, its anatomical zones, and lesions.</p>
     </div>
     <figure class="intro-image">
-      <img src="prostatevlm/assets/mri-t2w.webp" alt="T2-weighted prostate MRI slice" width="402" height="398" loading="lazy">
+      <img src="assets/mri-t2w.webp" alt="T2-weighted prostate MRI slice" width="402" height="398" loading="lazy">
       <figcaption>T2-weighted prostate MRI.</figcaption>
     </figure>
   </section>
@@ -113,10 +113,10 @@
     <h3 id="dataset-pipeline-title">Building the rationale dataset</h3>
     <figure class="dataset-pipeline" aria-labelledby="dataset-pipeline-title dataset-pipeline-caption">
       <div class="dataset-pipeline-viewport" role="region" aria-label="Dataset annotation pipeline; scroll horizontally on small screens to view the full figure" tabindex="0">
-        <img class="dataset-pipeline-diagram" src="prostatevlm/assets/dataset-pipeline.svg" alt="Dataset-construction pipeline. Public prostate MRI is paired with DWI, ADC, T2W images and gland, zone, and lesion masks. A radiologist creates a PI-RADS report, then GPT-4 and a PI-RADS decision tree produce an augmented rationale through in-context learning. Gray labels mark existing data and yellow labels mark created data. The figure labels 1,673 public MRI cases." width="1494" height="142" loading="lazy">
+        <img class="dataset-pipeline-diagram" src="assets/dataset-pipeline.svg" alt="Dataset-construction pipeline. Public prostate MRI is paired with DWI, ADC, T2W images and gland, zone, and lesion masks. A radiologist creates a PI-RADS report, then GPT-4 and a PI-RADS decision tree produce an augmented rationale through in-context learning. Gray labels mark existing data and yellow labels mark created data. The figure labels 1,673 public MRI cases." width="1494" height="142" loading="lazy">
       </div>
       <div class="rationale-curation-image">
-        <img src="prostatevlm/assets/rationale-curation.png" alt="A PI-RADS decision tree structures clinical guidance, and a PI-RADS report supplies findings for a lesion. The example compares GPT-4o-extracted rationales without and with decision-tree augmentation. Gray highlights identify report information; green highlights identify information added using the decision tree. This report example is separate from the MRI images in the pipeline above." width="2306" height="764" loading="lazy">
+        <img src="assets/rationale-curation.png" alt="A PI-RADS decision tree structures clinical guidance, and a PI-RADS report supplies findings for a lesion. The example compares GPT-4o-extracted rationales without and with decision-tree augmentation. Gray highlights identify report information; green highlights identify information added using the decision tree. This report example is separate from the MRI images in the pipeline above." width="2306" height="764" loading="lazy">
       </div>
       <figcaption id="dataset-pipeline-caption">
         <div class="dataset-stats" aria-label="Dataset statistics and features">
@@ -214,7 +214,7 @@
     <p>On unseen Prostate158 data, ProstateVLM achieved <strong>42.6% lesion Dice</strong>, compared with <strong>38.3%</strong> for ITUNet, the strongest reported baseline, without fine-tuning on this dataset. The examples below show its segmentations alongside other models and the reference annotations.</p>
     <figure class="segmentation-examples" id="segmentation" aria-labelledby="segmentation-examples-caption">
         <div class="figure-image">
-          <img src="prostatevlm/assets/segmentation-comparison.webp" alt="Original segmentation comparison. Left: rationale dataset lesion, zone, and gland examples. Upper right: unseen Prostate158 lesion and zone examples. Lower right: unseen MSD-Prostate zone example. Each panel compares U-Net, MA-SAM, ProstateVLM (Ours), and ground truth, with individual Dice scores. The color legend beneath the left panel identifies the three datasets." width="2174" height="942" loading="lazy">
+          <img src="assets/segmentation-comparison.webp" alt="Original segmentation comparison. Left: rationale dataset lesion, zone, and gland examples. Upper right: unseen Prostate158 lesion and zone examples. Lower right: unseen MSD-Prostate zone example. Each panel compares U-Net, MA-SAM, ProstateVLM (Ours), and ground truth, with individual Dice scores. The color legend beneath the left panel identifies the three datasets." width="2174" height="942" loading="lazy">
         </div>
         <figcaption id="segmentation-examples-caption">Segmentation examples from the rationale dataset and unseen Prostate158 and MSD-Prostate data. All methods were trained on the rationale dataset, with no fine-tuning on the external datasets. Numbers are Dice scores for the illustrated cases (1 = perfect overlap).</figcaption>
       </figure>
@@ -225,9 +225,9 @@
     <figure class="o1-comparison" aria-labelledby="o1-comparison-caption">
         <div class="figure-image">
         <div class="o1-panels">
-          <img src="prostatevlm/assets/o1-comparison-text.webp" alt="OpenAI o1’s textual explanation in the study example. Red highlights mark incorrect statements about lesion location, margin, size, and PI-RADS score; green highlights mark correct statements about lack of invasion." width="666" height="498" loading="lazy">
-          <img src="prostatevlm/assets/o1-comparison-evidence.webp" alt="ProstateVLM’s explanation for the same example: transition-zone location, a mass confined to the prostate, moderate hypointensity, and PI-RADS score 5, with supporting MRI heatmaps." width="780" height="498" loading="lazy">
-          <img src="prostatevlm/assets/o1-comparison-results.webp" alt="Reported accuracy, in the order random guess, OpenAI o1, and ProstateVLM: tumor classification 50%, 45%, and 90%; tumor location 50%, 22%, and 78%; PI-RADS score 25%, 22%, and 89%." width="715" height="498" loading="lazy">
+          <img src="assets/o1-comparison-text.webp" alt="OpenAI o1’s textual explanation in the study example. Red highlights mark incorrect statements about lesion location, margin, size, and PI-RADS score; green highlights mark correct statements about lack of invasion." width="666" height="498" loading="lazy">
+          <img src="assets/o1-comparison-evidence.webp" alt="ProstateVLM’s explanation for the same example: transition-zone location, a mass confined to the prostate, moderate hypointensity, and PI-RADS score 5, with supporting MRI heatmaps." width="780" height="498" loading="lazy">
+          <img src="assets/o1-comparison-results.webp" alt="Reported accuracy, in the order random guess, OpenAI o1, and ProstateVLM: tumor classification 50%, 45%, and 90%; tumor location 50%, 22%, and 78%; PI-RADS score 25%, 22%, and 89%." width="715" height="498" loading="lazy">
         </div>
         </div>
         <figcaption id="o1-comparison-caption">Comparison on 20 selected MRI scans (9 positive and 11 negative). Both models received MRI inputs; ProstateVLM also provided localized visual evidence. Red and green highlights mark incorrect and correct statements. Chart values are accuracy fractions (0.90 = 90%).</figcaption>
@@ -243,8 +243,8 @@
         <h3 id="failure-example-title">Localizing a potential error</h3>
         <figure class="failure-example" aria-labelledby="failure-example-title failure-example-caption">
           <div class="failure-images">
-            <div><span class="image-label">AI segmentation</span><div class="failure-image-frame"><img src="prostatevlm/assets/correction-1-prediction.webp" alt="Prostate MRI with the predicted lesion contour in red and reference annotation in yellow. The prediction extends beyond the reference; its case-level Dice score is 74.1%." width="253" height="253" loading="lazy"><span class="failure-dice" aria-hidden="true">DSC: 74.1</span></div></div>
-            <div><span class="image-label">Flagged regions</span><img src="prostatevlm/assets/correction-1-failure.webp" alt="The same prostate MRI with regions flagged as false positives by the failure-detection tool shown in red." width="253" height="253" loading="lazy"></div>
+            <div><span class="image-label">AI segmentation</span><div class="failure-image-frame"><img src="assets/correction-1-prediction.webp" alt="Prostate MRI with the predicted lesion contour in red and reference annotation in yellow. The prediction extends beyond the reference; its case-level Dice score is 74.1%." width="253" height="253" loading="lazy"><span class="failure-dice" aria-hidden="true">DSC: 74.1</span></div></div>
+            <div><span class="image-label">Flagged regions</span><img src="assets/correction-1-failure.webp" alt="The same prostate MRI with regions flagged as false positives by the failure-detection tool shown in red." width="253" height="253" loading="lazy"></div>
           </div>
           <figcaption id="failure-example-caption">PI-CAI example: AI mask (red) and reference contour (yellow) on the left; flagged false positives (red) on the right. The reference and Dice score (DSC, %) are for evaluation only.</figcaption>
         </figure>
@@ -280,9 +280,9 @@
     <h2 id="acknowledgments-title">Acknowledgments</h2>
     <p>This research is supported by the National Institutes of Health / National Cancer Institute through <a href="https://reporter.nih.gov/search/TLPc4JBz_ESj1S-bUwtAug/project-details/11116549" target="_blank" rel="noopener noreferrer">R21 CA301093</a>, with collaborators at the University of Virginia and Memorial Sloan Kettering Cancer Center.</p>
     <div class="supporter-logos">
-      <a class="supporter-institution" href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><img class="supporter-symbol" src="prostatevlm/assets/uva-logo.svg" alt="" width="45" height="49" loading="lazy"><span>University of Virginia</span></a>
-      <a class="supporter-institution" href="https://www.mskcc.org/" target="_blank" rel="noopener noreferrer"><img class="supporter-symbol" src="prostatevlm/assets/msk-logo.svg" alt="" width="215" height="246" loading="lazy"><span>Memorial Sloan Kettering<br>Cancer Center</span></a>
-      <a class="supporter-funder" href="https://www.cancer.gov/" target="_blank" rel="noopener noreferrer"><img src="prostatevlm/assets/nih-nci-logo.svg" alt="NIH National Cancer Institute" width="566" height="54" loading="lazy"></a>
+      <a class="supporter-institution" href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer"><img class="supporter-symbol" src="assets/uva-logo.svg" alt="" width="45" height="49" loading="lazy"><span>University of Virginia</span></a>
+      <a class="supporter-institution" href="https://www.mskcc.org/" target="_blank" rel="noopener noreferrer"><img class="supporter-symbol" src="assets/msk-logo.svg" alt="" width="215" height="246" loading="lazy"><span>Memorial Sloan Kettering<br>Cancer Center</span></a>
+      <a class="supporter-funder" href="https://www.cancer.gov/" target="_blank" rel="noopener noreferrer"><img src="assets/nih-nci-logo.svg" alt="NIH National Cancer Institute" width="566" height="54" loading="lazy"></a>
     </div>
   </section>
 </main>
