@@ -1,0 +1,19 @@
+{
+  "name": "deepreal-application-intake",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-18",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "deepreal-applications",
+      "database_id": "REQUIRES_ACCOUNT_SETUP",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "BUCKET",
+      "bucket_name": "deepreal-application-backups"
+    }
+  ]
+}
